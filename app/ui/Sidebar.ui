@@ -54,8 +54,8 @@ background-color: rgb(255, 255, 255);</string>
          </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-border: 1px solid #d5d5d5;</string>
+         <string notr="true">background-color: #f5f5f5
+</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -203,6 +203,9 @@ QPushButton::icon {
               <height>50</height>
              </size>
             </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
@@ -270,6 +273,9 @@ QPushButton::icon {
               <width>250</width>
               <height>45</height>
              </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
@@ -393,19 +399,6 @@ QPushButton::icon {
              <size>
               <width>20</width>
               <height>10</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <spacer name="verticalSpacer_8">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
              </size>
             </property>
            </spacer>
