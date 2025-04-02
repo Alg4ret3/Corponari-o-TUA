@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_PUEAA(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(306, 1448)
+        Form.resize(1400, 1430)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -38,28 +38,23 @@ class Ui_PUEAA(object):
         self.stackedWidget_2.setObjectName("stackedWidget_2")
         self.stackedWidget_2Page1 = QtWidgets.QWidget()
         self.stackedWidget_2Page1.setObjectName("stackedWidget_2Page1")
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.stackedWidget_2Page1)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.stackedWidget_2Page1)
+        self.verticalLayout.setObjectName("verticalLayout")
         self.frame_6 = QtWidgets.QFrame(self.stackedWidget_2Page1)
         self.frame_6.setStyleSheet("")
         self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_6.setObjectName("frame_6")
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_6)
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.label = QtWidgets.QLabel(self.frame_6)
-        self.label.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label.setObjectName("label")
-        self.verticalLayout_3.addWidget(self.label, 0, QtCore.Qt.AlignHCenter)
-        self.lineEdit_2 = QtWidgets.QLineEdit(self.frame_6)
+        self.gridLayout = QtWidgets.QGridLayout(self.frame_6)
+        self.gridLayout.setObjectName("gridLayout")
+        self.LineFechaMemorando = QtWidgets.QLineEdit(self.frame_6)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lineEdit_2.sizePolicy().hasHeightForWidth())
-        self.lineEdit_2.setSizePolicy(sizePolicy)
-        self.lineEdit_2.setMinimumSize(QtCore.QSize(500, 40))
-        self.lineEdit_2.setStyleSheet("QLineEdit {\n"
+        sizePolicy.setHeightForWidth(self.LineFechaMemorando.sizePolicy().hasHeightForWidth())
+        self.LineFechaMemorando.setSizePolicy(sizePolicy)
+        self.LineFechaMemorando.setMinimumSize(QtCore.QSize(500, 40))
+        self.LineFechaMemorando.setStyleSheet("QLineEdit {\n"
 "    background-color: #f5f5f5; /* Fondo gris claro */\n"
 "    border: none; /* Sin bordes generales */\n"
 "    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
@@ -82,21 +77,63 @@ class Ui_PUEAA(object):
 "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
 "}\n"
 "")
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.verticalLayout_3.addWidget(self.lineEdit_2, 0, QtCore.Qt.AlignHCenter)
-        self.label_2 = QtWidgets.QLabel(self.frame_6)
-        self.label_2.setStyleSheet("border:none;\n"
+        self.LineFechaMemorando.setObjectName("LineFechaMemorando")
+        self.gridLayout.addWidget(self.LineFechaMemorando, 14, 1, 1, 1)
+        self.LineNumeroDoc = QtWidgets.QLineEdit(self.frame_6)
+        self.LineNumeroDoc.setStyleSheet("QLineEdit {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font-size: 20px; /* Tamaño de fuente */\n"
+"    margin-right: 8px; /* Margen derecho */\n"
+"    text-align: center; /* Iniciar centrado */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando el cursor pasa por encima */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando está enfocado */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Fondo más claro */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
+"}\n"
+"")
+        self.LineNumeroDoc.setObjectName("LineNumeroDoc")
+        self.gridLayout.addWidget(self.LineNumeroDoc, 5, 0, 1, 1)
+        self.label = QtWidgets.QLabel(self.frame_6)
+        self.label.setStyleSheet("border:none;\n"
 "font:20px;")
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout_3.addWidget(self.label_2, 0, QtCore.Qt.AlignHCenter)
-        self.comboBox = QtWidgets.QComboBox(self.frame_6)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_7 = QtWidgets.QLabel(self.frame_6)
+        self.label_7.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_7.setObjectName("label_7")
+        self.gridLayout.addWidget(self.label_7, 0, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_8 = QtWidgets.QLabel(self.frame_6)
+        self.label_8.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_8.setObjectName("label_8")
+        self.gridLayout.addWidget(self.label_8, 4, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_6 = QtWidgets.QLabel(self.frame_6)
+        self.label_6.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_6.setObjectName("label_6")
+        self.gridLayout.addWidget(self.label_6, 13, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.ComboPUEAA = QtWidgets.QComboBox(self.frame_6)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.comboBox.sizePolicy().hasHeightForWidth())
-        self.comboBox.setSizePolicy(sizePolicy)
-        self.comboBox.setMinimumSize(QtCore.QSize(500, 40))
-        self.comboBox.setStyleSheet("QComboBox {\n"
+        sizePolicy.setHeightForWidth(self.ComboPUEAA.sizePolicy().hasHeightForWidth())
+        self.ComboPUEAA.setSizePolicy(sizePolicy)
+        self.ComboPUEAA.setMinimumSize(QtCore.QSize(500, 40))
+        self.ComboPUEAA.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.ComboPUEAA.setStyleSheet("QComboBox {\n"
 "    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */\n"
 "    border: none; /* Sin bordes generales */\n"
 "    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */\n"
@@ -145,21 +182,16 @@ class Ui_PUEAA(object):
 "    color: white; /* Texto en blanco */\n"
 "}\n"
 "")
-        self.comboBox.setObjectName("comboBox")
-        self.verticalLayout_3.addWidget(self.comboBox, 0, QtCore.Qt.AlignHCenter)
-        self.label_3 = QtWidgets.QLabel(self.frame_6)
-        self.label_3.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_3.setObjectName("label_3")
-        self.verticalLayout_3.addWidget(self.label_3, 0, QtCore.Qt.AlignHCenter)
-        self.lineEdit_4 = QtWidgets.QLineEdit(self.frame_6)
+        self.ComboPUEAA.setObjectName("ComboPUEAA")
+        self.gridLayout.addWidget(self.ComboPUEAA, 5, 1, 1, 1)
+        self.LineNumConcepto = QtWidgets.QLineEdit(self.frame_6)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lineEdit_4.sizePolicy().hasHeightForWidth())
-        self.lineEdit_4.setSizePolicy(sizePolicy)
-        self.lineEdit_4.setMinimumSize(QtCore.QSize(500, 40))
-        self.lineEdit_4.setStyleSheet("QLineEdit {\n"
+        sizePolicy.setHeightForWidth(self.LineNumConcepto.sizePolicy().hasHeightForWidth())
+        self.LineNumConcepto.setSizePolicy(sizePolicy)
+        self.LineNumConcepto.setMinimumSize(QtCore.QSize(500, 40))
+        self.LineNumConcepto.setStyleSheet("QLineEdit {\n"
 "    background-color: #f5f5f5; /* Fondo gris claro */\n"
 "    border: none; /* Sin bordes generales */\n"
 "    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
@@ -182,21 +214,137 @@ class Ui_PUEAA(object):
 "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
 "}\n"
 "")
-        self.lineEdit_4.setObjectName("lineEdit_4")
-        self.verticalLayout_3.addWidget(self.lineEdit_4, 0, QtCore.Qt.AlignHCenter)
-        self.label_4 = QtWidgets.QLabel(self.frame_6)
-        self.label_4.setStyleSheet("border:none;\n"
+        self.LineNumConcepto.setObjectName("LineNumConcepto")
+        self.gridLayout.addWidget(self.LineNumConcepto, 10, 0, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.frame_6)
+        self.label_3.setStyleSheet("border:none;\n"
 "font:20px;")
-        self.label_4.setObjectName("label_4")
-        self.verticalLayout_3.addWidget(self.label_4, 0, QtCore.Qt.AlignHCenter)
-        self.lineEdit_5 = QtWidgets.QLineEdit(self.frame_6)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 9, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.frame_6)
+        self.lineEdit_2.setStyleSheet("QLineEdit {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font-size: 20px; /* Tamaño de fuente */\n"
+"    margin-right: 8px; /* Margen derecho */\n"
+"    text-align: center; /* Iniciar centrado */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando el cursor pasa por encima */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando está enfocado */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Fondo más claro */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
+"}\n"
+"")
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.gridLayout.addWidget(self.lineEdit_2, 8, 1, 1, 1)
+        self.LineRazonSocial = QtWidgets.QLineEdit(self.frame_6)
+        self.LineRazonSocial.setStyleSheet("QLineEdit {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font-size: 20px; /* Tamaño de fuente */\n"
+"    margin-right: 8px; /* Margen derecho */\n"
+"    text-align: center; /* Iniciar centrado */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando el cursor pasa por encima */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando está enfocado */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Fondo más claro */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
+"}\n"
+"")
+        self.LineRazonSocial.setObjectName("LineRazonSocial")
+        self.gridLayout.addWidget(self.LineRazonSocial, 1, 1, 1, 1)
+        self.LineNumMemorando = QtWidgets.QLineEdit(self.frame_6)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lineEdit_5.sizePolicy().hasHeightForWidth())
-        self.lineEdit_5.setSizePolicy(sizePolicy)
-        self.lineEdit_5.setMinimumSize(QtCore.QSize(500, 40))
-        self.lineEdit_5.setStyleSheet("QLineEdit {\n"
+        sizePolicy.setHeightForWidth(self.LineNumMemorando.sizePolicy().hasHeightForWidth())
+        self.LineNumMemorando.setSizePolicy(sizePolicy)
+        self.LineNumMemorando.setMinimumSize(QtCore.QSize(500, 40))
+        self.LineNumMemorando.setStyleSheet("QLineEdit {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font-size: 20px; /* Tamaño de fuente */\n"
+"    margin-right: 8px; /* Margen derecho */\n"
+"    text-align: center; /* Iniciar centrado */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando el cursor pasa por encima */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando está enfocado */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Fondo más claro */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
+"}\n"
+"")
+        self.LineNumMemorando.setObjectName("LineNumMemorando")
+        self.gridLayout.addWidget(self.LineNumMemorando, 14, 0, 1, 1)
+        self.LineNumeroExpediente = QtWidgets.QLineEdit(self.frame_6)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.LineNumeroExpediente.sizePolicy().hasHeightForWidth())
+        self.LineNumeroExpediente.setSizePolicy(sizePolicy)
+        self.LineNumeroExpediente.setMinimumSize(QtCore.QSize(500, 40))
+        self.LineNumeroExpediente.setStyleSheet("QLineEdit {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font-size: 20px; /* Tamaño de fuente */\n"
+"    margin-right: 8px; /* Margen derecho */\n"
+"    text-align: center; /* Iniciar centrado */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando el cursor pasa por encima */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando está enfocado */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Fondo más claro */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
+"}\n"
+"")
+        self.LineNumeroExpediente.setObjectName("LineNumeroExpediente")
+        self.gridLayout.addWidget(self.LineNumeroExpediente, 1, 0, 1, 1)
+        self.LineFechaConcepto = QtWidgets.QLineEdit(self.frame_6)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.LineFechaConcepto.sizePolicy().hasHeightForWidth())
+        self.LineFechaConcepto.setSizePolicy(sizePolicy)
+        self.LineFechaConcepto.setMinimumSize(QtCore.QSize(500, 40))
+        self.LineFechaConcepto.setStyleSheet("QLineEdit {\n"
 "\n"
 "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
 "    border: none; /* Sin bordes generales */\n"
@@ -242,58 +390,30 @@ class Ui_PUEAA(object):
 "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
 "}\n"
 "")
-        self.lineEdit_5.setObjectName("lineEdit_5")
-        self.verticalLayout_3.addWidget(self.lineEdit_5, 0, QtCore.Qt.AlignHCenter)
+        self.LineFechaConcepto.setObjectName("LineFechaConcepto")
+        self.gridLayout.addWidget(self.LineFechaConcepto, 10, 1, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.frame_6)
+        self.label_2.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 4, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_5 = QtWidgets.QLabel(self.frame_6)
         self.label_5.setStyleSheet("border:none;\n"
 "font:20px;")
         self.label_5.setObjectName("label_5")
-        self.verticalLayout_3.addWidget(self.label_5, 0, QtCore.Qt.AlignHCenter)
-        self.lineEdit_3 = QtWidgets.QLineEdit(self.frame_6)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lineEdit_3.sizePolicy().hasHeightForWidth())
-        self.lineEdit_3.setSizePolicy(sizePolicy)
-        self.lineEdit_3.setMinimumSize(QtCore.QSize(500, 40))
-        self.lineEdit_3.setStyleSheet("QLineEdit {\n"
-"    background-color: #f5f5f5; /* Fondo gris claro */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font-size: 20px; /* Tamaño de fuente */\n"
-"    margin-right: 8px; /* Margen derecho */\n"
-"    text-align: center; /* Iniciar centrado */\n"
-"}\n"
-"\n"
-"/* Cambia el estilo cuando el cursor pasa por encima */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */\n"
-"}\n"
-"\n"
-"/* Cambia el estilo cuando está enfocado */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Fondo más claro */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
-"}\n"
-"")
-        self.lineEdit_3.setObjectName("lineEdit_3")
-        self.verticalLayout_3.addWidget(self.lineEdit_3, 0, QtCore.Qt.AlignHCenter)
-        self.label_6 = QtWidgets.QLabel(self.frame_6)
-        self.label_6.setStyleSheet("border:none;\n"
+        self.gridLayout.addWidget(self.label_5, 13, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_4 = QtWidgets.QLabel(self.frame_6)
+        self.label_4.setStyleSheet("border:none;\n"
 "font:20px;")
-        self.label_6.setObjectName("label_6")
-        self.verticalLayout_3.addWidget(self.label_6, 0, QtCore.Qt.AlignHCenter)
-        self.lineEdit_6 = QtWidgets.QLineEdit(self.frame_6)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lineEdit_6.sizePolicy().hasHeightForWidth())
-        self.lineEdit_6.setSizePolicy(sizePolicy)
-        self.lineEdit_6.setMinimumSize(QtCore.QSize(500, 40))
-        self.lineEdit_6.setStyleSheet("QLineEdit {\n"
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_9 = QtWidgets.QLabel(self.frame_6)
+        self.label_9.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_9.setObjectName("label_9")
+        self.gridLayout.addWidget(self.label_9, 6, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.lineEdit = QtWidgets.QLineEdit(self.frame_6)
+        self.lineEdit.setStyleSheet("QLineEdit {\n"
 "    background-color: #f5f5f5; /* Fondo gris claro */\n"
 "    border: none; /* Sin bordes generales */\n"
 "    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
@@ -316,11 +436,14 @@ class Ui_PUEAA(object):
 "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
 "}\n"
 "")
-        self.lineEdit_6.setObjectName("lineEdit_6")
-        self.verticalLayout_3.addWidget(self.lineEdit_6, 0, QtCore.Qt.AlignHCenter)
-        spacerItem = QtWidgets.QSpacerItem(20, 300, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout_3.addItem(spacerItem)
-        self.horizontalLayout_3.addWidget(self.frame_6)
+        self.lineEdit.setObjectName("lineEdit")
+        self.gridLayout.addWidget(self.lineEdit, 8, 0, 1, 1)
+        self.label_10 = QtWidgets.QLabel(self.frame_6)
+        self.label_10.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_10.setObjectName("label_10")
+        self.gridLayout.addWidget(self.label_10, 6, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.verticalLayout.addWidget(self.frame_6, 0, QtCore.Qt.AlignHCenter)
         self.frame_5 = QtWidgets.QFrame(self.stackedWidget_2Page1)
         self.frame_5.setMinimumSize(QtCore.QSize(500, 0))
         self.frame_5.setStyleSheet("")
@@ -329,6 +452,126 @@ class Ui_PUEAA(object):
         self.frame_5.setObjectName("frame_5")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.frame_5)
         self.gridLayout_3.setObjectName("gridLayout_3")
+        self.frame_4 = QtWidgets.QFrame(self.frame_5)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_4.sizePolicy().hasHeightForWidth())
+        self.frame_4.setSizePolicy(sizePolicy)
+        self.frame_4.setMinimumSize(QtCore.QSize(0, 65))
+        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_4)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        spacerItem = QtWidgets.QSpacerItem(1300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem)
+        self.BtnCrear = QtWidgets.QPushButton(self.frame_4)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.BtnCrear.sizePolicy().hasHeightForWidth())
+        self.BtnCrear.setSizePolicy(sizePolicy)
+        self.BtnCrear.setMinimumSize(QtCore.QSize(180, 45))
+        self.BtnCrear.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BtnCrear.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 5px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("assets/iconos/anadir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.BtnCrear.setIcon(icon)
+        self.BtnCrear.setIconSize(QtCore.QSize(24, 24))
+        self.BtnCrear.setObjectName("BtnCrear")
+        self.horizontalLayout_4.addWidget(self.BtnCrear, 0, QtCore.Qt.AlignRight)
+        self.BtnActualizar = QtWidgets.QPushButton(self.frame_4)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.BtnActualizar.sizePolicy().hasHeightForWidth())
+        self.BtnActualizar.setSizePolicy(sizePolicy)
+        self.BtnActualizar.setMinimumSize(QtCore.QSize(180, 45))
+        self.BtnActualizar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BtnActualizar.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 2px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: Center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #525C5E; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("assets/iconos/actualizar-flecha.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.BtnActualizar.setIcon(icon1)
+        self.BtnActualizar.setIconSize(QtCore.QSize(24, 24))
+        self.BtnActualizar.setObjectName("BtnActualizar")
+        self.horizontalLayout_4.addWidget(self.BtnActualizar, 0, QtCore.Qt.AlignRight)
+        self.BtnBorrar = QtWidgets.QPushButton(self.frame_4)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.BtnBorrar.sizePolicy().hasHeightForWidth())
+        self.BtnBorrar.setSizePolicy(sizePolicy)
+        self.BtnBorrar.setMinimumSize(QtCore.QSize(180, 45))
+        self.BtnBorrar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BtnBorrar.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 5px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #D32F2F  ; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("assets/iconos/borrar.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.BtnBorrar.setIcon(icon2)
+        self.BtnBorrar.setIconSize(QtCore.QSize(28, 28))
+        self.BtnBorrar.setObjectName("BtnBorrar")
+        self.horizontalLayout_4.addWidget(self.BtnBorrar, 0, QtCore.Qt.AlignRight)
+        self.gridLayout_3.addWidget(self.frame_4, 2, 0, 1, 1)
         self.frame_3 = QtWidgets.QFrame(self.frame_5)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -342,15 +585,15 @@ class Ui_PUEAA(object):
         self.frame_3.setObjectName("frame_3")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_3)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.lineEdit = QtWidgets.QLineEdit(self.frame_3)
+        self.Linebuscador = QtWidgets.QLineEdit(self.frame_3)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lineEdit.sizePolicy().hasHeightForWidth())
-        self.lineEdit.setSizePolicy(sizePolicy)
-        self.lineEdit.setMinimumSize(QtCore.QSize(500, 40))
-        self.lineEdit.setMaximumSize(QtCore.QSize(300, 25))
-        self.lineEdit.setStyleSheet("QLineEdit {\n"
+        sizePolicy.setHeightForWidth(self.Linebuscador.sizePolicy().hasHeightForWidth())
+        self.Linebuscador.setSizePolicy(sizePolicy)
+        self.Linebuscador.setMinimumSize(QtCore.QSize(500, 40))
+        self.Linebuscador.setMaximumSize(QtCore.QSize(300, 25))
+        self.Linebuscador.setStyleSheet("QLineEdit {\n"
 "\n"
 "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
 "    border: none; /* Sin bordes generales */\n"
@@ -396,149 +639,29 @@ class Ui_PUEAA(object):
 "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
 "}\n"
 "")
-        self.lineEdit.setObjectName("lineEdit")
-        self.horizontalLayout_2.addWidget(self.lineEdit)
+        self.Linebuscador.setObjectName("Linebuscador")
+        self.horizontalLayout_2.addWidget(self.Linebuscador)
         self.toolButton_2 = QtWidgets.QToolButton(self.frame_3)
         self.toolButton_2.setMinimumSize(QtCore.QSize(45, 45))
         self.toolButton_2.setMaximumSize(QtCore.QSize(30, 30))
         self.toolButton_2.setStyleSheet("border:none;")
         self.toolButton_2.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("assets/iconos/people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.toolButton_2.setIcon(icon)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("assets/iconos/people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.toolButton_2.setIcon(icon3)
         self.toolButton_2.setIconSize(QtCore.QSize(32, 32))
         self.toolButton_2.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
         self.toolButton_2.setObjectName("toolButton_2")
         self.horizontalLayout_2.addWidget(self.toolButton_2)
         self.gridLayout_3.addWidget(self.frame_3, 0, 0, 1, 1, QtCore.Qt.AlignHCenter)
-        self.frame_4 = QtWidgets.QFrame(self.frame_5)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.frame_4.sizePolicy().hasHeightForWidth())
-        self.frame_4.setSizePolicy(sizePolicy)
-        self.frame_4.setMinimumSize(QtCore.QSize(0, 50))
-        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_4.setObjectName("frame_4")
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_4)
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        spacerItem1 = QtWidgets.QSpacerItem(280, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem1)
-        self.pushButton_3 = QtWidgets.QPushButton(self.frame_4)
+        self.TablaPUEAA = QtWidgets.QTableWidget(self.frame_5)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_3.sizePolicy().hasHeightForWidth())
-        self.pushButton_3.setSizePolicy(sizePolicy)
-        self.pushButton_3.setMinimumSize(QtCore.QSize(180, 45))
-        self.pushButton_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_3.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 5px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: center; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("assets/iconos/anadir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_3.setIcon(icon1)
-        self.pushButton_3.setIconSize(QtCore.QSize(24, 24))
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.horizontalLayout_4.addWidget(self.pushButton_3, 0, QtCore.Qt.AlignRight)
-        self.pushButton_2 = QtWidgets.QPushButton(self.frame_4)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
-        self.pushButton_2.setSizePolicy(sizePolicy)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(180, 45))
-        self.pushButton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_2.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: Center; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #525C5E; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("assets/iconos/actualizar-flecha.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_2.setIcon(icon2)
-        self.pushButton_2.setIconSize(QtCore.QSize(24, 24))
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout_4.addWidget(self.pushButton_2, 0, QtCore.Qt.AlignRight)
-        self.pushButton = QtWidgets.QPushButton(self.frame_4)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy)
-        self.pushButton.setMinimumSize(QtCore.QSize(180, 45))
-        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 5px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: center; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #C2185B ; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("assets/iconos/borrar.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton.setIcon(icon3)
-        self.pushButton.setIconSize(QtCore.QSize(28, 28))
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout_4.addWidget(self.pushButton, 0, QtCore.Qt.AlignRight)
-        self.gridLayout_3.addWidget(self.frame_4, 2, 0, 1, 1)
-        self.tableWidget = QtWidgets.QTableWidget(self.frame_5)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy)
-        self.tableWidget.setMinimumSize(QtCore.QSize(520, 600))
-        self.tableWidget.setStyleSheet("QTableWidget {\n"
+        sizePolicy.setHeightForWidth(self.TablaPUEAA.sizePolicy().hasHeightForWidth())
+        self.TablaPUEAA.setSizePolicy(sizePolicy)
+        self.TablaPUEAA.setMinimumSize(QtCore.QSize(700, 150))
+        self.TablaPUEAA.setStyleSheet("QTableWidget {\n"
 "    background-color: #f5f5f5; /* Fondo gris claro */\n"
 "    border: 1px solid #CCCCCC; /* Borde suave */\n"
 "    border-radius: 2px; /* Bordes redondeados */\n"
@@ -591,71 +714,71 @@ class Ui_PUEAA(object):
 "    background: none; /* Quitar las flechas */\n"
 "}\n"
 "")
-        self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(6)
-        self.tableWidget.setRowCount(24)
+        self.TablaPUEAA.setObjectName("TablaPUEAA")
+        self.TablaPUEAA.setColumnCount(6)
+        self.TablaPUEAA.setRowCount(24)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(0, item)
+        self.TablaPUEAA.setVerticalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(1, item)
+        self.TablaPUEAA.setVerticalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(2, item)
+        self.TablaPUEAA.setVerticalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(3, item)
+        self.TablaPUEAA.setVerticalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(4, item)
+        self.TablaPUEAA.setVerticalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(5, item)
+        self.TablaPUEAA.setVerticalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(6, item)
+        self.TablaPUEAA.setVerticalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(7, item)
+        self.TablaPUEAA.setVerticalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(8, item)
+        self.TablaPUEAA.setVerticalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(9, item)
+        self.TablaPUEAA.setVerticalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(10, item)
+        self.TablaPUEAA.setVerticalHeaderItem(10, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(11, item)
+        self.TablaPUEAA.setVerticalHeaderItem(11, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(12, item)
+        self.TablaPUEAA.setVerticalHeaderItem(12, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(13, item)
+        self.TablaPUEAA.setVerticalHeaderItem(13, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(14, item)
+        self.TablaPUEAA.setVerticalHeaderItem(14, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(15, item)
+        self.TablaPUEAA.setVerticalHeaderItem(15, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(16, item)
+        self.TablaPUEAA.setVerticalHeaderItem(16, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(17, item)
+        self.TablaPUEAA.setVerticalHeaderItem(17, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(18, item)
+        self.TablaPUEAA.setVerticalHeaderItem(18, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(19, item)
+        self.TablaPUEAA.setVerticalHeaderItem(19, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(20, item)
+        self.TablaPUEAA.setVerticalHeaderItem(20, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(21, item)
+        self.TablaPUEAA.setVerticalHeaderItem(21, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(22, item)
+        self.TablaPUEAA.setVerticalHeaderItem(22, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(23, item)
+        self.TablaPUEAA.setVerticalHeaderItem(23, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, item)
+        self.TablaPUEAA.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(1, item)
+        self.TablaPUEAA.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(2, item)
+        self.TablaPUEAA.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(3, item)
+        self.TablaPUEAA.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(4, item)
+        self.TablaPUEAA.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(5, item)
-        self.gridLayout_3.addWidget(self.tableWidget, 1, 0, 1, 1, QtCore.Qt.AlignHCenter)
-        self.horizontalLayout_3.addWidget(self.frame_5)
+        self.TablaPUEAA.setHorizontalHeaderItem(5, item)
+        self.gridLayout_3.addWidget(self.TablaPUEAA, 1, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.verticalLayout.addWidget(self.frame_5)
         self.stackedWidget_2.addWidget(self.stackedWidget_2Page1)
         self.horizontalLayout_5.addWidget(self.stackedWidget_2)
         self.horizontalLayout.addWidget(self.frame)
@@ -667,71 +790,75 @@ class Ui_PUEAA(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Navbar"))
         self.label.setText(_translate("Form", "Número de Expediente:"))
-        self.label_2.setText(_translate("Form", "¿Presento PUEAA?"))
-        self.label_3.setText(_translate("Form", "Número de concepto:"))
-        self.label_4.setText(_translate("Form", "Fecha de concepto:"))
-        self.label_5.setText(_translate("Form", "Número de memorando:"))
+        self.label_7.setText(_translate("Form", "Razon Social:"))
+        self.label_8.setText(_translate("Form", "Número de documento:"))
         self.label_6.setText(_translate("Form", "Fecha de memorando:"))
-        self.pushButton_3.setText(_translate("Form", " Crear"))
-        self.pushButton_2.setText(_translate("Form", " Actualizar"))
-        self.pushButton.setText(_translate("Form", " Borrar"))
-        item = self.tableWidget.verticalHeaderItem(0)
+        self.label_3.setText(_translate("Form", "Número de concepto:"))
+        self.label_2.setText(_translate("Form", "¿Presento PUEAA?"))
+        self.label_5.setText(_translate("Form", "Número de memorando:"))
+        self.label_4.setText(_translate("Form", "Fecha de concepto:"))
+        self.label_9.setText(_translate("Form", "TextLabel"))
+        self.label_10.setText(_translate("Form", "TextLabel"))
+        self.BtnCrear.setText(_translate("Form", " Crear"))
+        self.BtnActualizar.setText(_translate("Form", " Actualizar"))
+        self.BtnBorrar.setText(_translate("Form", " Borrar"))
+        item = self.TablaPUEAA.verticalHeaderItem(0)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(1)
+        item = self.TablaPUEAA.verticalHeaderItem(1)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(2)
+        item = self.TablaPUEAA.verticalHeaderItem(2)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(3)
+        item = self.TablaPUEAA.verticalHeaderItem(3)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(4)
+        item = self.TablaPUEAA.verticalHeaderItem(4)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(5)
+        item = self.TablaPUEAA.verticalHeaderItem(5)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(6)
+        item = self.TablaPUEAA.verticalHeaderItem(6)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(7)
+        item = self.TablaPUEAA.verticalHeaderItem(7)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(8)
+        item = self.TablaPUEAA.verticalHeaderItem(8)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(9)
+        item = self.TablaPUEAA.verticalHeaderItem(9)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(10)
+        item = self.TablaPUEAA.verticalHeaderItem(10)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(11)
+        item = self.TablaPUEAA.verticalHeaderItem(11)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(12)
+        item = self.TablaPUEAA.verticalHeaderItem(12)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(13)
+        item = self.TablaPUEAA.verticalHeaderItem(13)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(14)
+        item = self.TablaPUEAA.verticalHeaderItem(14)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(15)
+        item = self.TablaPUEAA.verticalHeaderItem(15)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(16)
+        item = self.TablaPUEAA.verticalHeaderItem(16)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(17)
+        item = self.TablaPUEAA.verticalHeaderItem(17)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(18)
+        item = self.TablaPUEAA.verticalHeaderItem(18)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(19)
+        item = self.TablaPUEAA.verticalHeaderItem(19)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(20)
+        item = self.TablaPUEAA.verticalHeaderItem(20)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(21)
+        item = self.TablaPUEAA.verticalHeaderItem(21)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(22)
+        item = self.TablaPUEAA.verticalHeaderItem(22)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.verticalHeaderItem(23)
+        item = self.TablaPUEAA.verticalHeaderItem(23)
         item.setText(_translate("Form", "New Row"))
-        item = self.tableWidget.horizontalHeaderItem(0)
+        item = self.TablaPUEAA.horizontalHeaderItem(0)
         item.setText(_translate("Form", "Expediente"))
-        item = self.tableWidget.horizontalHeaderItem(1)
+        item = self.TablaPUEAA.horizontalHeaderItem(1)
         item.setText(_translate("Form", "PUEAA"))
-        item = self.tableWidget.horizontalHeaderItem(2)
+        item = self.TablaPUEAA.horizontalHeaderItem(2)
         item.setText(_translate("Form", "Concepto"))
-        item = self.tableWidget.horizontalHeaderItem(3)
+        item = self.TablaPUEAA.horizontalHeaderItem(3)
         item.setText(_translate("Form", "Fecha de cooncepto"))
-        item = self.tableWidget.horizontalHeaderItem(4)
+        item = self.TablaPUEAA.horizontalHeaderItem(4)
         item.setText(_translate("Form", "Nueva columna"))
-        item = self.tableWidget.horizontalHeaderItem(5)
+        item = self.TablaPUEAA.horizontalHeaderItem(5)
         item.setText(_translate("Form", "Fecha de memorando"))
