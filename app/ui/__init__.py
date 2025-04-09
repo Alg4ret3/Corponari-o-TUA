@@ -6,3 +6,4 @@ from .PUEAA import *
 from .ControlMonitoreo import *
 from .Registro import *
 from .Usuarios import *
+from .Usos import *

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1556</width>
-    <height>727</height>
+    <height>959</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -46,6 +46,409 @@ background-color: rgb(255, 255, 255);</string>
         </property>
         <widget class="QWidget" name="stackedWidget_2Page1">
          <layout class="QVBoxLayout" name="verticalLayout">
+          <item alignment="Qt::AlignTop">
+           <widget class="QFrame" name="frame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="2" column="3" alignment="Qt::AlignTop">
+              <widget class="QComboBox" name="comboBox_2">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QComboBox {
+    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */
+    border-radius:2px; /* Bordes redondeados suaves */
+    padding: 5px 5px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente más elegante */
+    color: #333333; /* Texto en gris oscuro */
+    transition: all 0.3s ease; /* Transición suave */
+	
+}
+
+/* Efecto al pasar el mouse */
+QComboBox:hover {
+    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */
+    background-color: #f0f0f0; /* Cambio sutil de fondo */
+}
+
+/* Cuando el ComboBox está en foco */
+QComboBox:focus {
+    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+/* Personalización del menú desplegable */
+QComboBox QAbstractItemView {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333333; /* Texto gris oscuro */
+    border-radius: 5px; /* Bordes redondeados suaves */
+    selection-background-color: #16344D; /* Fondo de selección azul elegante */
+    selection-color: white; /* Texto blanco al seleccionar */
+    padding: 5px 0; /* Espaciado interno */
+    min-width: 150px; /* Ancho mínimo para una mejor apariencia */
+}
+
+/* Cambio de color cuando se pasa el mouse por una opción */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #16344D; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Texto blanco */
+}
+
+/* Cambio de color cuando una opción está seleccionada */
+QComboBox QAbstractItemView::item:selected {
+    background-color: #16344D; /* Mismo fondo de selección */
+    color: white; /* Texto en blanco */
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="3" alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_2">
+               <property name="styleSheet">
+                <string notr="true">border:none;
+font:20px;</string>
+               </property>
+               <property name="text">
+                <string>Tipo de concesión:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">border:none;
+font:20px;</string>
+               </property>
+               <property name="text">
+                <string>Area de Registro:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>400</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="4">
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>400</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="1" alignment="Qt::AlignTop">
+              <widget class="QComboBox" name="comboBox">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QComboBox {
+    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */
+    border-radius:2px; /* Bordes redondeados suaves */
+    padding: 5px 5px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente más elegante */
+    color: #333333; /* Texto en gris oscuro */
+    transition: all 0.3s ease; /* Transición suave */
+	
+}
+
+/* Efecto al pasar el mouse */
+QComboBox:hover {
+    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */
+    background-color: #f0f0f0; /* Cambio sutil de fondo */
+}
+
+/* Cuando el ComboBox está en foco */
+QComboBox:focus {
+    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+/* Personalización del menú desplegable */
+QComboBox QAbstractItemView {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333333; /* Texto gris oscuro */
+    border-radius: 5px; /* Bordes redondeados suaves */
+    selection-background-color: #16344D; /* Fondo de selección azul elegante */
+    selection-color: white; /* Texto blanco al seleccionar */
+    padding: 5px 0; /* Espaciado interno */
+    min-width: 150px; /* Ancho mínimo para una mejor apariencia */
+}
+
+/* Cambio de color cuando se pasa el mouse por una opción */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #16344D; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Texto blanco */
+}
+
+/* Cambio de color cuando una opción está seleccionada */
+QComboBox QAbstractItemView::item:selected {
+    background-color: #16344D; /* Mismo fondo de selección */
+    color: white; /* Texto en blanco */
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>100</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="3" column="3">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>50</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+           <widget class="QListWidget" name="listWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor" stdset="0">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget {
+    background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+QListWidget::item {
+    padding: 5px; /* Espaciado de las celdas */
+}
+
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: #f5f5f5; /* Fondo gris claro */
+    width: 7px; /* Ancho de la barra vertical */
+    height: 7px; /* Alto de la barra horizontal */
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background-color: #16344D; /* Barra de desplazamiento en azul */
+    border-radius: 15px; /* Bordes redondeados */
+    min-height: 10px; /* Tamaño mínimo de la barra de desplazamiento vertical */
+    min-width: 10px; /* Tamaño mínimo de la barra de desplazamiento horizontal */
+}
+
+QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
+    background-color: #1A4567; /* Fondo más oscuro al pasar el mouse */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    background: none; /* Quitar los botones de desplazamiento */
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    background: none; /* Quitar las flechas */
+}
+</string>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::MultiSelection</enum>
+            </property>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nuevo elemento</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item>
            <widget class="QFrame" name="frame_3">
             <property name="sizePolicy">
@@ -94,7 +497,7 @@ background-color: rgb(255, 255, 255);</string>
                <property name="minimumSize">
                 <size>
                  <width>500</width>
-                 <height>40</height>
+                 <height>35</height>
                 </size>
                </property>
                <property name="maximumSize">
@@ -204,7 +607,20 @@ QLineEdit:focus {
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignHCenter">
+          <item>
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
            <widget class="QTableWidget" name="tableWidget">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -215,7 +631,7 @@ QLineEdit:focus {
             <property name="minimumSize">
              <size>
               <width>1500</width>
-              <height>600</height>
+              <height>150</height>
              </size>
             </property>
             <property name="styleSheet">
@@ -469,6 +885,90 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
              </property>
             </column>
            </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QPushButton" name="pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16344D; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 22px; /* Tamaño de fuente */
+    text-align: center; /* Alinea el texto a la izquierda */
+}
+
+QPushButton:hover {
+    background-color: #388E3C; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+    transform: scale(1.02); /* Ligero aumento al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+QPushButton::icon {
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
+}
+</string>
+            </property>
+            <property name="text">
+             <string> Generar Excel</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/iconos/sobresalir.png</normaloff>../../assets/iconos/sobresalir.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>200</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>

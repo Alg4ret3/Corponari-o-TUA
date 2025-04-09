@@ -14,19 +14,25 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_sidebar(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(306, 1448)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        Form.resize(310, 1457)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
         Form.setSizePolicy(sizePolicy)
         Form.setMinimumSize(QtCore.QSize(300, 600))
-        Form.setStyleSheet("background-color: rgb(238, 238, 238);\n"
-"background-color: rgb(255, 255, 255);")
+        Form.setStyleSheet(
+            "background-color: rgb(238, 238, 238);\n"
+            "background-color: rgb(255, 255, 255);"
+        )
         self.horizontalLayout = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.widget = QtWidgets.QWidget(Form)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
@@ -35,14 +41,17 @@ class Ui_sidebar(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout.setObjectName("verticalLayout")
         self.stackedWidget = QtWidgets.QStackedWidget(self.widget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.stackedWidget.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.stackedWidget.sizePolicy().hasHeightForWidth()
+        )
         self.stackedWidget.setSizePolicy(sizePolicy)
         self.stackedWidget.setMinimumSize(QtCore.QSize(250, 550))
-        self.stackedWidget.setStyleSheet("background-color: #f5f5f5\n"
-"")
+        self.stackedWidget.setStyleSheet("background-color: #f5f5f5\n" "")
         self.stackedWidget.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.stackedWidget.setFrameShadow(QtWidgets.QFrame.Plain)
         self.stackedWidget.setLineWidth(0)
@@ -52,7 +61,9 @@ class Ui_sidebar(object):
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.stackedWidgetPage1)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.label = QtWidgets.QLabel(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
@@ -65,303 +76,440 @@ class Ui_sidebar(object):
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.verticalLayout_3.addWidget(self.label)
-        spacerItem = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        spacerItem = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
         self.verticalLayout_3.addItem(spacerItem)
         self.BtnExpediente = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.BtnExpediente.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.BtnExpediente.sizePolicy().hasHeightForWidth()
+        )
         self.BtnExpediente.setSizePolicy(sizePolicy)
-        self.BtnExpediente.setMinimumSize(QtCore.QSize(250, 45))
+        self.BtnExpediente.setMinimumSize(QtCore.QSize(250, 50))
         self.BtnExpediente.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnExpediente.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: left; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
+        self.BtnExpediente.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("assets/iconos/expediente (1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap("assets/iconos/expediente (1).png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
         self.BtnExpediente.setIcon(icon)
         self.BtnExpediente.setIconSize(QtCore.QSize(24, 24))
         self.BtnExpediente.setObjectName("BtnExpediente")
         self.verticalLayout_3.addWidget(self.BtnExpediente)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
         self.verticalLayout_3.addItem(spacerItem1)
-        self.BtnResolucion = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        self.BtnUso = QtWidgets.QPushButton(self.stackedWidgetPage1)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.BtnResolucion.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(self.BtnUso.sizePolicy().hasHeightForWidth())
+        self.BtnUso.setSizePolicy(sizePolicy)
+        self.BtnUso.setMinimumSize(QtCore.QSize(250, 50))
+        self.BtnUso.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BtnUso.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(
+            QtGui.QPixmap("assets/iconos/gotas.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnUso.setIcon(icon1)
+        self.BtnUso.setIconSize(QtCore.QSize(24, 24))
+        self.BtnUso.setObjectName("BtnUso")
+        self.verticalLayout_3.addWidget(self.BtnUso)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout_3.addItem(spacerItem2)
+        self.BtnResolucion = QtWidgets.QPushButton(self.stackedWidgetPage1)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(
+            self.BtnResolucion.sizePolicy().hasHeightForWidth()
+        )
         self.BtnResolucion.setSizePolicy(sizePolicy)
         self.BtnResolucion.setMinimumSize(QtCore.QSize(250, 50))
         self.BtnResolucion.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnResolucion.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: left; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("assets/iconos/legal.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnResolucion.setIcon(icon1)
+        self.BtnResolucion.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(
+            QtGui.QPixmap("assets/iconos/legal.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnResolucion.setIcon(icon2)
         self.BtnResolucion.setIconSize(QtCore.QSize(32, 32))
         self.BtnResolucion.setObjectName("BtnResolucion")
         self.verticalLayout_3.addWidget(self.BtnResolucion)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout_3.addItem(spacerItem2)
+        spacerItem3 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout_3.addItem(spacerItem3)
         self.BtnPUEAA = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnPUEAA.sizePolicy().hasHeightForWidth())
         self.BtnPUEAA.setSizePolicy(sizePolicy)
-        self.BtnPUEAA.setMinimumSize(QtCore.QSize(250, 45))
+        self.BtnPUEAA.setMinimumSize(QtCore.QSize(250, 50))
         self.BtnPUEAA.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnPUEAA.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: left; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("assets/iconos/siembra.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnPUEAA.setIcon(icon2)
+        self.BtnPUEAA.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(
+            QtGui.QPixmap("assets/iconos/siembra.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnPUEAA.setIcon(icon3)
         self.BtnPUEAA.setIconSize(QtCore.QSize(24, 24))
         self.BtnPUEAA.setObjectName("BtnPUEAA")
         self.verticalLayout_3.addWidget(self.BtnPUEAA)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout_3.addItem(spacerItem3)
+        spacerItem4 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout_3.addItem(spacerItem4)
         self.BtnMonitoreo = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnMonitoreo.sizePolicy().hasHeightForWidth())
         self.BtnMonitoreo.setSizePolicy(sizePolicy)
         self.BtnMonitoreo.setMinimumSize(QtCore.QSize(250, 50))
         self.BtnMonitoreo.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnMonitoreo.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px\n"
-"; /* Tamaño de fuente */\n"
-"    text-align: left; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("assets/iconos/stock-chart.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnMonitoreo.setIcon(icon3)
+        self.BtnMonitoreo.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px\n"
+            "; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(
+            QtGui.QPixmap("assets/iconos/stock-chart.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnMonitoreo.setIcon(icon4)
         self.BtnMonitoreo.setIconSize(QtCore.QSize(24, 24))
         self.BtnMonitoreo.setObjectName("BtnMonitoreo")
         self.verticalLayout_3.addWidget(self.BtnMonitoreo)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout_3.addItem(spacerItem4)
+        spacerItem5 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout_3.addItem(spacerItem5)
         self.BtnRegistros = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnRegistros.sizePolicy().hasHeightForWidth())
         self.BtnRegistros.setSizePolicy(sizePolicy)
         self.BtnRegistros.setMinimumSize(QtCore.QSize(250, 50))
         self.BtnRegistros.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnRegistros.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: left; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("assets/iconos/folder.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnRegistros.setIcon(icon4)
+        self.BtnRegistros.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(
+            QtGui.QPixmap("assets/iconos/folder.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnRegistros.setIcon(icon5)
         self.BtnRegistros.setIconSize(QtCore.QSize(24, 24))
         self.BtnRegistros.setObjectName("BtnRegistros")
-        self.verticalLayout_3.addWidget(self.BtnRegistros, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
-        spacerItem5 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout_3.addItem(spacerItem5)
+        self.verticalLayout_3.addWidget(
+            self.BtnRegistros, 0, QtCore.Qt.AlignHCenter | QtCore.Qt.AlignTop
+        )
+        spacerItem6 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout_3.addItem(spacerItem6)
         self.BtnReportes = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnReportes.sizePolicy().hasHeightForWidth())
         self.BtnReportes.setSizePolicy(sizePolicy)
         self.BtnReportes.setMinimumSize(QtCore.QSize(250, 50))
         self.BtnReportes.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnReportes.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: left; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("assets/iconos/grafico-de-barras.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnReportes.setIcon(icon5)
+        self.BtnReportes.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(
+            QtGui.QPixmap("assets/iconos/grafico-de-barras.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnReportes.setIcon(icon6)
         self.BtnReportes.setIconSize(QtCore.QSize(24, 24))
         self.BtnReportes.setObjectName("BtnReportes")
-        self.verticalLayout_3.addWidget(self.BtnReportes, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
-        spacerItem6 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout_3.addItem(spacerItem6)
+        self.verticalLayout_3.addWidget(
+            self.BtnReportes, 0, QtCore.Qt.AlignHCenter | QtCore.Qt.AlignTop
+        )
+        spacerItem7 = QtWidgets.QSpacerItem(
+            20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout_3.addItem(spacerItem7)
         self.BtnUsuarios = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnUsuarios.sizePolicy().hasHeightForWidth())
         self.BtnUsuarios.setSizePolicy(sizePolicy)
         self.BtnUsuarios.setMinimumSize(QtCore.QSize(250, 45))
         self.BtnUsuarios.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnUsuarios.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: left; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("assets/iconos/nuevo-usuario.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnUsuarios.setIcon(icon6)
+        self.BtnUsuarios.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: left; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #1A4567; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(
+            QtGui.QPixmap("assets/iconos/nuevo-usuario.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnUsuarios.setIcon(icon7)
         self.BtnUsuarios.setIconSize(QtCore.QSize(24, 24))
         self.BtnUsuarios.setObjectName("BtnUsuarios")
         self.verticalLayout_3.addWidget(self.BtnUsuarios, 0, QtCore.Qt.AlignHCenter)
-        spacerItem7 = QtWidgets.QSpacerItem(20, 700, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout_3.addItem(spacerItem7)
+        spacerItem8 = QtWidgets.QSpacerItem(
+            20, 700, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
+        self.verticalLayout_3.addItem(spacerItem8)
         self.BtnSalir = QtWidgets.QPushButton(self.stackedWidgetPage1)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnSalir.sizePolicy().hasHeightForWidth())
         self.BtnSalir.setSizePolicy(sizePolicy)
         self.BtnSalir.setMinimumSize(QtCore.QSize(180, 45))
         self.BtnSalir.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnSalir.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: Center; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #D9844C; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("assets/iconos/cerrar-sesion.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnSalir.setIcon(icon7)
+        self.BtnSalir.setStyleSheet(
+            "QPushButton {\n"
+            "    background-color: #16344D; /* Color de fondo */\n"
+            "    border-radius: 2px; /* Bordes redondeados */\n"
+            "    color: white; /* Color del texto */\n"
+            "    padding: 5px 10px; /* Espaciado interno */\n"
+            "    border: none; /* Elimina el borde predeterminado */\n"
+            "    font-size: 22px; /* Tamaño de fuente */\n"
+            "    text-align: Center; /* Alinea el texto a la izquierda */\n"
+            "}\n"
+            "\n"
+            "QPushButton:hover {\n"
+            "    background-color: #D9844C; /* Color de fondo al pasar el mouse */\n"
+            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+            "}\n"
+            "\n"
+            "QPushButton::icon {\n"
+            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+            "}\n"
+            ""
+        )
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(
+            QtGui.QPixmap("assets/iconos/cerrar-sesion.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
+        self.BtnSalir.setIcon(icon8)
         self.BtnSalir.setIconSize(QtCore.QSize(24, 24))
         self.BtnSalir.setObjectName("BtnSalir")
-        self.verticalLayout_3.addWidget(self.BtnSalir, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignBottom)
+        self.verticalLayout_3.addWidget(
+            self.BtnSalir, 0, QtCore.Qt.AlignHCenter | QtCore.Qt.AlignBottom
+        )
         self.stackedWidget.addWidget(self.stackedWidgetPage1)
         self.verticalLayout.addWidget(self.stackedWidget)
         self.horizontalLayout.addWidget(self.widget)
@@ -372,11 +520,12 @@ class Ui_sidebar(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Navbar"))
-        self.BtnExpediente.setText(_translate("Form", " Expedientes"))
+        self.BtnExpediente.setText(_translate("Form", " Expediente"))
+        self.BtnUso.setText(_translate("Form", " Uso"))
         self.BtnResolucion.setText(_translate("Form", " Resolución"))
         self.BtnPUEAA.setText(_translate("Form", " PUEAA"))
         self.BtnMonitoreo.setText(_translate("Form", " Monitoreo"))
-        self.BtnRegistros.setText(_translate("Form", " Registros"))
-        self.BtnReportes.setText(_translate("Form", " Reportes"))
-        self.BtnUsuarios.setText(_translate("Form", " Usuarios"))
+        self.BtnRegistros.setText(_translate("Form", " Registro"))
+        self.BtnReportes.setText(_translate("Form", " Reporte"))
+        self.BtnUsuarios.setText(_translate("Form", " Usuario"))
         self.BtnSalir.setText(_translate("Form", " Salir"))

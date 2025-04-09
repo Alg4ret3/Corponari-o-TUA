@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Registro(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1556, 727)
+        Form.resize(1556, 959)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -38,6 +38,225 @@ class Ui_Registro(object):
         self.stackedWidget_2Page1.setObjectName("stackedWidget_2Page1")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.stackedWidget_2Page1)
         self.verticalLayout.setObjectName("verticalLayout")
+        self.frame = QtWidgets.QFrame(self.stackedWidget_2Page1)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
+        self.frame.setSizePolicy(sizePolicy)
+        self.frame.setMinimumSize(QtCore.QSize(0, 150))
+        self.frame.setStyleSheet("")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.gridLayout = QtWidgets.QGridLayout(self.frame)
+        self.gridLayout.setObjectName("gridLayout")
+        self.comboBox_2 = QtWidgets.QComboBox(self.frame)
+        self.comboBox_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.comboBox_2.setStyleSheet("QComboBox {\n"
+"    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */\n"
+"    border-radius:2px; /* Bordes redondeados suaves */\n"
+"    padding: 5px 5px; /* Espaciado interno */\n"
+"    font-size: 18px; /* Tamaño de fuente más elegante */\n"
+"    color: #333333; /* Texto en gris oscuro */\n"
+"    transition: all 0.3s ease; /* Transición suave */\n"
+"    \n"
+"}\n"
+"\n"
+"/* Efecto al pasar el mouse */\n"
+"QComboBox:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */\n"
+"    background-color: #f0f0f0; /* Cambio sutil de fondo */\n"
+"}\n"
+"\n"
+"/* Cuando el ComboBox está en foco */\n"
+"QComboBox:focus {\n"
+"    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */\n"
+"    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */\n"
+"}\n"
+"\n"
+"/* Personalización del menú desplegable */\n"
+"QComboBox QAbstractItemView {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    color: #333333; /* Texto gris oscuro */\n"
+"    border-radius: 5px; /* Bordes redondeados suaves */\n"
+"    selection-background-color: #16344D; /* Fondo de selección azul elegante */\n"
+"    selection-color: white; /* Texto blanco al seleccionar */\n"
+"    padding: 5px 0; /* Espaciado interno */\n"
+"    min-width: 150px; /* Ancho mínimo para una mejor apariencia */\n"
+"}\n"
+"\n"
+"/* Cambio de color cuando se pasa el mouse por una opción */\n"
+"QComboBox QAbstractItemView::item:hover {\n"
+"    background-color: #16344D; /* Fondo oscuro al pasar el mouse */\n"
+"    color: white; /* Texto blanco */\n"
+"}\n"
+"\n"
+"/* Cambio de color cuando una opción está seleccionada */\n"
+"QComboBox QAbstractItemView::item:selected {\n"
+"    background-color: #16344D; /* Mismo fondo de selección */\n"
+"    color: white; /* Texto en blanco */\n"
+"}\n"
+"")
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.gridLayout.addWidget(self.comboBox_2, 2, 3, 1, 1, QtCore.Qt.AlignTop)
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 0, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        spacerItem = QtWidgets.QSpacerItem(400, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 0, 0, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(400, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem1, 0, 4, 1, 1)
+        self.comboBox = QtWidgets.QComboBox(self.frame)
+        self.comboBox.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.comboBox.setStyleSheet("QComboBox {\n"
+"    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */\n"
+"    border-radius:2px; /* Bordes redondeados suaves */\n"
+"    padding: 5px 5px; /* Espaciado interno */\n"
+"    font-size: 18px; /* Tamaño de fuente más elegante */\n"
+"    color: #333333; /* Texto en gris oscuro */\n"
+"    transition: all 0.3s ease; /* Transición suave */\n"
+"    \n"
+"}\n"
+"\n"
+"/* Efecto al pasar el mouse */\n"
+"QComboBox:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */\n"
+"    background-color: #f0f0f0; /* Cambio sutil de fondo */\n"
+"}\n"
+"\n"
+"/* Cuando el ComboBox está en foco */\n"
+"QComboBox:focus {\n"
+"    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */\n"
+"    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */\n"
+"}\n"
+"\n"
+"/* Personalización del menú desplegable */\n"
+"QComboBox QAbstractItemView {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    color: #333333; /* Texto gris oscuro */\n"
+"    border-radius: 5px; /* Bordes redondeados suaves */\n"
+"    selection-background-color: #16344D; /* Fondo de selección azul elegante */\n"
+"    selection-color: white; /* Texto blanco al seleccionar */\n"
+"    padding: 5px 0; /* Espaciado interno */\n"
+"    min-width: 150px; /* Ancho mínimo para una mejor apariencia */\n"
+"}\n"
+"\n"
+"/* Cambio de color cuando se pasa el mouse por una opción */\n"
+"QComboBox QAbstractItemView::item:hover {\n"
+"    background-color: #16344D; /* Fondo oscuro al pasar el mouse */\n"
+"    color: white; /* Texto blanco */\n"
+"}\n"
+"\n"
+"/* Cambio de color cuando una opción está seleccionada */\n"
+"QComboBox QAbstractItemView::item:selected {\n"
+"    background-color: #16344D; /* Mismo fondo de selección */\n"
+"    color: white; /* Texto en blanco */\n"
+"}\n"
+"")
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.gridLayout.addWidget(self.comboBox, 2, 1, 1, 1, QtCore.Qt.AlignTop)
+        spacerItem2 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem2, 2, 2, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 50, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem3, 3, 3, 1, 1)
+        self.verticalLayout.addWidget(self.frame, 0, QtCore.Qt.AlignTop)
+        self.listWidget = QtWidgets.QListWidget(self.stackedWidget_2Page1)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.listWidget.sizePolicy().hasHeightForWidth())
+        self.listWidget.setSizePolicy(sizePolicy)
+        self.listWidget.setMinimumSize(QtCore.QSize(0, 0))
+        self.listWidget.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.listWidget.setStyleSheet("QListWidget {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"}\n"
+"\n"
+"QListWidget::item {\n"
+"    padding: 5px; /* Espaciado de las celdas */\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar:vertical, QScrollBar:horizontal {\n"
+"    border-radius: 15px; /* Bordes redondeados */\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    width: 7px; /* Ancho de la barra vertical */\n"
+"    height: 7px; /* Alto de la barra horizontal */\n"
+"}\n"
+"\n"
+"QScrollBar::handle:vertical, QScrollBar::handle:horizontal {\n"
+"    background-color: #16344D; /* Barra de desplazamiento en azul */\n"
+"    border-radius: 15px; /* Bordes redondeados */\n"
+"    min-height: 10px; /* Tamaño mínimo de la barra de desplazamiento vertical */\n"
+"    min-width: 10px; /* Tamaño mínimo de la barra de desplazamiento horizontal */\n"
+"}\n"
+"\n"
+"QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {\n"
+"    background-color: #1A4567; /* Fondo más oscuro al pasar el mouse */\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,\n"
+"QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {\n"
+"    background: none; /* Quitar los botones de desplazamiento */\n"
+"}\n"
+"\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,\n"
+"QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {\n"
+"    background: none; /* Quitar las flechas */\n"
+"}\n"
+"")
+        self.listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
+        self.listWidget.setObjectName("listWidget")
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget.addItem(item)
+        self.verticalLayout.addWidget(self.listWidget, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem4)
         self.frame_3 = QtWidgets.QFrame(self.stackedWidget_2Page1)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -51,15 +270,15 @@ class Ui_Registro(object):
         self.frame_3.setObjectName("frame_3")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_3)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem)
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem5)
         self.lineEdit = QtWidgets.QLineEdit(self.frame_3)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.lineEdit.sizePolicy().hasHeightForWidth())
         self.lineEdit.setSizePolicy(sizePolicy)
-        self.lineEdit.setMinimumSize(QtCore.QSize(500, 40))
+        self.lineEdit.setMinimumSize(QtCore.QSize(500, 35))
         self.lineEdit.setMaximumSize(QtCore.QSize(300, 25))
         self.lineEdit.setStyleSheet("QLineEdit {\n"
 "\n"
@@ -121,16 +340,18 @@ class Ui_Registro(object):
         self.toolButton_2.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
         self.toolButton_2.setObjectName("toolButton_2")
         self.horizontalLayout_2.addWidget(self.toolButton_2)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem1)
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem6)
         self.verticalLayout.addWidget(self.frame_3)
+        spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem7)
         self.tableWidget = QtWidgets.QTableWidget(self.stackedWidget_2Page1)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
         self.tableWidget.setSizePolicy(sizePolicy)
-        self.tableWidget.setMinimumSize(QtCore.QSize(1500, 600))
+        self.tableWidget.setMinimumSize(QtCore.QSize(1500, 150))
         self.tableWidget.setStyleSheet("QTableWidget {\n"
 "    background-color: #f5f5f5; /* Fondo gris claro */\n"
 "    border: 1px solid #CCCCCC; /* Borde suave */\n"
@@ -265,7 +486,46 @@ class Ui_Registro(object):
         self.tableWidget.setHorizontalHeaderItem(13, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(14, item)
-        self.verticalLayout.addWidget(self.tableWidget, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout.addWidget(self.tableWidget, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem8)
+        self.pushButton = QtWidgets.QPushButton(self.stackedWidget_2Page1)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
+        self.pushButton.setSizePolicy(sizePolicy)
+        self.pushButton.setMinimumSize(QtCore.QSize(200, 45))
+        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 5px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #388E3C; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("assets/iconos/sobresalir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton.setIcon(icon1)
+        self.pushButton.setIconSize(QtCore.QSize(24, 24))
+        self.pushButton.setObjectName("pushButton")
+        self.verticalLayout.addWidget(self.pushButton, 0, QtCore.Qt.AlignHCenter)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 200, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.verticalLayout.addItem(spacerItem9)
         self.stackedWidget_2.addWidget(self.stackedWidget_2Page1)
         self.horizontalLayout_3.addWidget(self.stackedWidget_2)
         self.horizontalLayout.addWidget(self.widget)
@@ -276,6 +536,42 @@ class Ui_Registro(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Navbar"))
+        self.comboBox_2.setItemText(0, _translate("Form", "Nuevo elemento"))
+        self.comboBox_2.setItemText(1, _translate("Form", "Nuevo elemento"))
+        self.comboBox_2.setItemText(2, _translate("Form", "Nuevo elemento"))
+        self.comboBox_2.setItemText(3, _translate("Form", "Nuevo elemento"))
+        self.comboBox_2.setItemText(4, _translate("Form", "Nuevo elemento"))
+        self.label_2.setText(_translate("Form", "Tipo de concesión:"))
+        self.label.setText(_translate("Form", "Area de Registro:"))
+        self.comboBox.setItemText(0, _translate("Form", "Nuevo elemento"))
+        self.comboBox.setItemText(1, _translate("Form", "Nuevo elemento"))
+        self.comboBox.setItemText(2, _translate("Form", "Nuevo elemento"))
+        self.comboBox.setItemText(3, _translate("Form", "Nuevo elemento"))
+        __sortingEnabled = self.listWidget.isSortingEnabled()
+        self.listWidget.setSortingEnabled(False)
+        item = self.listWidget.item(0)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(1)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(2)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(3)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(4)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(5)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(6)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(7)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(8)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(9)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        item = self.listWidget.item(10)
+        item.setText(_translate("Form", "Nuevo elemento"))
+        self.listWidget.setSortingEnabled(__sortingEnabled)
         item = self.tableWidget.verticalHeaderItem(0)
         item.setText(_translate("Form", "New Row"))
         item = self.tableWidget.verticalHeaderItem(1)
@@ -354,3 +650,4 @@ class Ui_Registro(object):
         item.setText(_translate("Form", "New Column"))
         item = self.tableWidget.horizontalHeaderItem(14)
         item.setText(_translate("Form", "New Column"))
+        self.pushButton.setText(_translate("Form", " Generar Excel"))

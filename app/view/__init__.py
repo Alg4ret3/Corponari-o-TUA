@@ -6,3 +6,4 @@ from .PUEAAView import *
 from .ControlView import *
 from .RegistrosView import *
 from .UsuariosView import *
+from .UsosView import *

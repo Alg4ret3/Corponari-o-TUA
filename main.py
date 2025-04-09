@@ -11,6 +11,7 @@ import sys
 from app.view.LoginView import Login_View  # Importamos la clase Login_View
 from app.VentanasView import MainApp  # Importamos la clase MainApp
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -33,7 +34,9 @@ class MainWindow(QMainWindow):
 
         # Instanciar las vistas
         self.Login = Login_View()  # Vista de Login
-        self.MainApp = MainApp()  # Vista principal de la aplicación después del inicio de sesión
+        self.MainApp = (
+            MainApp()
+        )  # Vista principal de la aplicación después del inicio de sesión
 
         # Agregar vistas al QStackedWidget
         self.stacked_widget.addWidget(self.Login)
@@ -76,6 +79,7 @@ class MainWindow(QMainWindow):
                 self, "Error de inicio de sesión", "Usuario o contraseña incorrectos."
             )
             print("Inicio de sesión fallido")
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

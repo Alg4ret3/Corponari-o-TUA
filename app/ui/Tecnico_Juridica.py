@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Tecnico_juridica(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1635, 811)
+        Form.resize(881, 811)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -131,6 +131,126 @@ class Ui_Tecnico_juridica(object):
         self.toolButton_3.setObjectName("toolButton_3")
         self.horizontalLayout_6.addWidget(self.toolButton_3)
         self.gridLayout_5.addWidget(self.frame_8, 1, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.frame_7 = QtWidgets.QFrame(self.frame_5)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_7.sizePolicy().hasHeightForWidth())
+        self.frame_7.setSizePolicy(sizePolicy)
+        self.frame_7.setMinimumSize(QtCore.QSize(0, 65))
+        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.frame_7)
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        spacerItem = QtWidgets.QSpacerItem(1300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_5.addItem(spacerItem)
+        self.BtnCrear = QtWidgets.QPushButton(self.frame_7)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.BtnCrear.sizePolicy().hasHeightForWidth())
+        self.BtnCrear.setSizePolicy(sizePolicy)
+        self.BtnCrear.setMinimumSize(QtCore.QSize(180, 45))
+        self.BtnCrear.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BtnCrear.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 5px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("assets/iconos/anadir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.BtnCrear.setIcon(icon1)
+        self.BtnCrear.setIconSize(QtCore.QSize(24, 24))
+        self.BtnCrear.setObjectName("BtnCrear")
+        self.horizontalLayout_5.addWidget(self.BtnCrear, 0, QtCore.Qt.AlignRight)
+        self.BtnActualizar = QtWidgets.QPushButton(self.frame_7)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.BtnActualizar.sizePolicy().hasHeightForWidth())
+        self.BtnActualizar.setSizePolicy(sizePolicy)
+        self.BtnActualizar.setMinimumSize(QtCore.QSize(180, 45))
+        self.BtnActualizar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BtnActualizar.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 2px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: Center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #525C5E; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("assets/iconos/actualizar-flecha.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.BtnActualizar.setIcon(icon2)
+        self.BtnActualizar.setIconSize(QtCore.QSize(24, 24))
+        self.BtnActualizar.setObjectName("BtnActualizar")
+        self.horizontalLayout_5.addWidget(self.BtnActualizar, 0, QtCore.Qt.AlignRight)
+        self.BtnBorrar = QtWidgets.QPushButton(self.frame_7)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.BtnBorrar.sizePolicy().hasHeightForWidth())
+        self.BtnBorrar.setSizePolicy(sizePolicy)
+        self.BtnBorrar.setMinimumSize(QtCore.QSize(180, 45))
+        self.BtnBorrar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BtnBorrar.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 5px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #D32F2F  ; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("assets/iconos/borrar.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.BtnBorrar.setIcon(icon3)
+        self.BtnBorrar.setIconSize(QtCore.QSize(28, 28))
+        self.BtnBorrar.setObjectName("BtnBorrar")
+        self.horizontalLayout_5.addWidget(self.BtnBorrar, 0, QtCore.Qt.AlignRight)
+        self.gridLayout_5.addWidget(self.frame_7, 3, 0, 1, 1)
         self.TablaTecnicoJuridica = QtWidgets.QTableWidget(self.frame_5)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -192,7 +312,7 @@ class Ui_Tecnico_juridica(object):
 "}\n"
 "")
         self.TablaTecnicoJuridica.setObjectName("TablaTecnicoJuridica")
-        self.TablaTecnicoJuridica.setColumnCount(31)
+        self.TablaTecnicoJuridica.setColumnCount(28)
         self.TablaTecnicoJuridica.setRowCount(24)
         item = QtWidgets.QTableWidgetItem()
         self.TablaTecnicoJuridica.setVerticalHeaderItem(0, item)
@@ -326,136 +446,7 @@ class Ui_Tecnico_juridica(object):
         item = QtWidgets.QTableWidgetItem()
         item.setTextAlignment(QtCore.Qt.AlignCenter)
         self.TablaTecnicoJuridica.setHorizontalHeaderItem(27, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignCenter)
-        self.TablaTecnicoJuridica.setHorizontalHeaderItem(28, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignCenter)
-        self.TablaTecnicoJuridica.setHorizontalHeaderItem(29, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignCenter)
-        self.TablaTecnicoJuridica.setHorizontalHeaderItem(30, item)
         self.gridLayout_5.addWidget(self.TablaTecnicoJuridica, 2, 0, 1, 1, QtCore.Qt.AlignHCenter)
-        self.frame_7 = QtWidgets.QFrame(self.frame_5)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.frame_7.sizePolicy().hasHeightForWidth())
-        self.frame_7.setSizePolicy(sizePolicy)
-        self.frame_7.setMinimumSize(QtCore.QSize(0, 65))
-        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_7.setObjectName("frame_7")
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.frame_7)
-        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        spacerItem = QtWidgets.QSpacerItem(1300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_5.addItem(spacerItem)
-        self.BtnCrear = QtWidgets.QPushButton(self.frame_7)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.BtnCrear.sizePolicy().hasHeightForWidth())
-        self.BtnCrear.setSizePolicy(sizePolicy)
-        self.BtnCrear.setMinimumSize(QtCore.QSize(180, 45))
-        self.BtnCrear.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnCrear.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 5px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: center; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("assets/iconos/anadir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnCrear.setIcon(icon1)
-        self.BtnCrear.setIconSize(QtCore.QSize(24, 24))
-        self.BtnCrear.setObjectName("BtnCrear")
-        self.horizontalLayout_5.addWidget(self.BtnCrear, 0, QtCore.Qt.AlignRight)
-        self.BtnActualizar = QtWidgets.QPushButton(self.frame_7)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.BtnActualizar.sizePolicy().hasHeightForWidth())
-        self.BtnActualizar.setSizePolicy(sizePolicy)
-        self.BtnActualizar.setMinimumSize(QtCore.QSize(180, 45))
-        self.BtnActualizar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnActualizar.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 2px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: Center; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #525C5E; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("assets/iconos/actualizar-flecha.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnActualizar.setIcon(icon2)
-        self.BtnActualizar.setIconSize(QtCore.QSize(24, 24))
-        self.BtnActualizar.setObjectName("BtnActualizar")
-        self.horizontalLayout_5.addWidget(self.BtnActualizar, 0, QtCore.Qt.AlignRight)
-        self.BtnBorrar = QtWidgets.QPushButton(self.frame_7)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.BtnBorrar.sizePolicy().hasHeightForWidth())
-        self.BtnBorrar.setSizePolicy(sizePolicy)
-        self.BtnBorrar.setMinimumSize(QtCore.QSize(180, 45))
-        self.BtnBorrar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnBorrar.setStyleSheet("QPushButton {\n"
-"    background-color: #16344D; /* Color de fondo */\n"
-"    border-radius: 5px; /* Bordes redondeados */\n"
-"    color: white; /* Color del texto */\n"
-"    padding: 5px 10px; /* Espaciado interno */\n"
-"    border: none; /* Elimina el borde predeterminado */\n"
-"    font-size: 22px; /* Tamaño de fuente */\n"
-"    text-align: center; /* Alinea el texto a la izquierda */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #D32F2F  ; /* Color de fondo al pasar el mouse */\n"
-"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-"}\n"
-"\n"
-"QPushButton::icon {\n"
-"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-"}\n"
-"")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("assets/iconos/borrar.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.BtnBorrar.setIcon(icon3)
-        self.BtnBorrar.setIconSize(QtCore.QSize(28, 28))
-        self.BtnBorrar.setObjectName("BtnBorrar")
-        self.horizontalLayout_5.addWidget(self.BtnBorrar, 0, QtCore.Qt.AlignRight)
-        self.gridLayout_5.addWidget(self.frame_7, 3, 0, 1, 1)
         self.frame_6 = QtWidgets.QFrame(self.frame_5)
         self.frame_6.setStyleSheet("alternate-background-color: rgb(255, 255, 255);")
         self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -463,129 +454,16 @@ class Ui_Tecnico_juridica(object):
         self.frame_6.setObjectName("frame_6")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.frame_6)
         self.gridLayout_4.setObjectName("gridLayout_4")
-        self.LineFecharesolucion = QtWidgets.QLabel(self.frame_6)
-        self.LineFecharesolucion.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.LineFecharesolucion.setObjectName("LineFecharesolucion")
-        self.gridLayout_4.addWidget(self.LineFecharesolucion, 12, 11, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_10 = QtWidgets.QLabel(self.frame_6)
         self.label_10.setStyleSheet("border:none;\n"
 "font:20px;")
         self.label_10.setObjectName("label_10")
         self.gridLayout_4.addWidget(self.label_10, 5, 7, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_30 = QtWidgets.QLabel(self.frame_6)
-        self.label_30.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_30.setObjectName("label_30")
-        self.gridLayout_4.addWidget(self.label_30, 10, 11, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineExpedienteRelacionado = QtWidgets.QLineEdit(self.frame_6)
-        self.LineExpedienteRelacionado.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineExpedienteRelacionado.setObjectName("LineExpedienteRelacionado")
-        self.gridLayout_4.addWidget(self.LineExpedienteRelacionado, 19, 11, 1, 1)
         self.label_9 = QtWidgets.QLabel(self.frame_6)
         self.label_9.setStyleSheet("border:none;\n"
 "font:20px;")
         self.label_9.setObjectName("label_9")
         self.gridLayout_4.addWidget(self.label_9, 0, 11, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_24 = QtWidgets.QLabel(self.frame_6)
-        self.label_24.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_24.setObjectName("label_24")
-        self.gridLayout_4.addWidget(self.label_24, 18, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineVolumen = QtWidgets.QLineEdit(self.frame_6)
-        self.LineVolumen.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineVolumen.setObjectName("LineVolumen")
-        self.gridLayout_4.addWidget(self.LineVolumen, 19, 9, 1, 1)
         self.LineNumeroExpediente = QtWidgets.QLineEdit(self.frame_6)
         self.LineNumeroExpediente.setStyleSheet("QLineEdit {\n"
 "    background-color: #f5f5f5; /* Fondo gris claro */\n"
@@ -612,158 +490,6 @@ class Ui_Tecnico_juridica(object):
 "")
         self.LineNumeroExpediente.setObjectName("LineNumeroExpediente")
         self.gridLayout_4.addWidget(self.LineNumeroExpediente, 2, 3, 1, 1)
-        self.label_25 = QtWidgets.QLabel(self.frame_6)
-        self.label_25.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_25.setObjectName("label_25")
-        self.gridLayout_4.addWidget(self.label_25, 18, 9, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LinePorcentajeOtorgado = QtWidgets.QLineEdit(self.frame_6)
-        self.LinePorcentajeOtorgado.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LinePorcentajeOtorgado.setObjectName("LinePorcentajeOtorgado")
-        self.gridLayout_4.addWidget(self.LinePorcentajeOtorgado, 14, 3, 1, 1)
-        self.lineEdit_13 = QtWidgets.QLineEdit(self.frame_6)
-        self.lineEdit_13.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.lineEdit_13.setObjectName("lineEdit_13")
-        self.gridLayout_4.addWidget(self.lineEdit_13, 17, 11, 1, 1)
-        self.LineNumocupaciones = QtWidgets.QLineEdit(self.frame_6)
-        self.LineNumocupaciones.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineNumocupaciones.setObjectName("LineNumocupaciones")
-        self.gridLayout_4.addWidget(self.LineNumocupaciones, 17, 9, 1, 1)
         self.label_3 = QtWidgets.QLabel(self.frame_6)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -774,11 +500,6 @@ class Ui_Tecnico_juridica(object):
         self.label_3.setText("")
         self.label_3.setObjectName("label_3")
         self.gridLayout_4.addWidget(self.label_3, 21, 0, 1, 1)
-        self.label_11 = QtWidgets.QLabel(self.frame_6)
-        self.label_11.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_11.setObjectName("label_11")
-        self.gridLayout_4.addWidget(self.label_11, 10, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_28 = QtWidgets.QLabel(self.frame_6)
         self.label_28.setStyleSheet("border:none;\n"
 "font:20px;")
@@ -786,181 +507,6 @@ class Ui_Tecnico_juridica(object):
         self.gridLayout_4.addWidget(self.label_28, 0, 7, 1, 1, QtCore.Qt.AlignHCenter)
         spacerItem1 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem1, 2, 8, 1, 1)
-        self.label_31 = QtWidgets.QLabel(self.frame_6)
-        self.label_31.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_31.setObjectName("label_31")
-        self.gridLayout_4.addWidget(self.label_31, 18, 11, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_23 = QtWidgets.QLabel(self.frame_6)
-        self.label_23.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_23.setObjectName("label_23")
-        self.gridLayout_4.addWidget(self.label_23, 16, 7, 1, 1, QtCore.Qt.AlignHCenter)
-        self.ComboUso = QtWidgets.QComboBox(self.frame_6)
-        self.ComboUso.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.ComboUso.setStyleSheet("QComboBox {\n"
-"    background-color: #f5f5f5; /* Mismo fondo gris claro que el QLineEdit */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #CCCCCC; /* Borde inferior suave */\n"
-"    border-radius:2px; /* Bordes redondeados suaves */\n"
-"    padding: 5px 5px; /* Espaciado interno */\n"
-"    font-size: 18px; /* Tamaño de fuente más elegante */\n"
-"    color: #333333; /* Texto en gris oscuro */\n"
-"    transition: all 0.3s ease; /* Transición suave */\n"
-"    \n"
-"}\n"
-"\n"
-"/* Efecto al pasar el mouse */\n"
-"QComboBox:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Engrosa el borde inferior al pasar el mouse */\n"
-"    background-color: #f0f0f0; /* Cambio sutil de fondo */\n"
-"}\n"
-"\n"
-"/* Cuando el ComboBox está en foco */\n"
-"QComboBox:focus {\n"
-"    background-color: #e0e0e0; /* Gris más oscuro cuando está activo */\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"    box-shadow: 0 0 8px rgba(22, 52, 77, 0.3); /* Sombra más suave y elegante */\n"
-"    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */\n"
-"}\n"
-"\n"
-"/* Personalización del menú desplegable */\n"
-"QComboBox QAbstractItemView {\n"
-"    background-color: #f5f5f5; /* Fondo gris claro */\n"
-"    color: #333333; /* Texto gris oscuro */\n"
-"    border-radius: 5px; /* Bordes redondeados suaves */\n"
-"    selection-background-color: #16344D; /* Fondo de selección azul elegante */\n"
-"    selection-color: white; /* Texto blanco al seleccionar */\n"
-"    padding: 5px 0; /* Espaciado interno */\n"
-"    min-width: 150px; /* Ancho mínimo para una mejor apariencia */\n"
-"}\n"
-"\n"
-"/* Cambio de color cuando se pasa el mouse por una opción */\n"
-"QComboBox QAbstractItemView::item:hover {\n"
-"    background-color: #16344D; /* Fondo oscuro al pasar el mouse */\n"
-"    color: white; /* Texto blanco */\n"
-"}\n"
-"\n"
-"/* Cambio de color cuando una opción está seleccionada */\n"
-"QComboBox QAbstractItemView::item:selected {\n"
-"    background-color: #16344D; /* Mismo fondo de selección */\n"
-"    color: white; /* Texto en blanco */\n"
-"}\n"
-"")
-        self.ComboUso.setObjectName("ComboUso")
-        self.ComboUso.addItem("")
-        self.ComboUso.addItem("")
-        self.ComboUso.addItem("")
-        self.ComboUso.addItem("")
-        self.gridLayout_4.addWidget(self.ComboUso, 14, 5, 1, 1)
-        self.label_12 = QtWidgets.QLabel(self.frame_6)
-        self.label_12.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_12.setObjectName("label_12")
-        self.gridLayout_4.addWidget(self.label_12, 12, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineFechacomunicacion = QtWidgets.QLineEdit(self.frame_6)
-        self.LineFechacomunicacion.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineFechacomunicacion.setObjectName("LineFechacomunicacion")
-        self.gridLayout_4.addWidget(self.LineFechacomunicacion, 17, 3, 1, 1)
-        self.label_17 = QtWidgets.QLabel(self.frame_6)
-        self.label_17.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_17.setObjectName("label_17")
-        self.gridLayout_4.addWidget(self.label_17, 18, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineCoordenadaX = QtWidgets.QLineEdit(self.frame_6)
-        self.LineCoordenadaX.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineCoordenadaX.setObjectName("LineCoordenadaX")
-        self.gridLayout_4.addWidget(self.LineCoordenadaX, 11, 7, 1, 1)
         self.label_19 = QtWidgets.QLabel(self.frame_6)
         self.label_19.setStyleSheet("border:none;\n"
 "font:20px;")
@@ -978,213 +524,11 @@ class Ui_Tecnico_juridica(object):
 "font:20px;")
         self.label_4.setObjectName("label_4")
         self.gridLayout_4.addWidget(self.label_4, 5, 11, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineAncho = QtWidgets.QLineEdit(self.frame_6)
-        self.LineAncho.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineAncho.setObjectName("LineAncho")
-        self.gridLayout_4.addWidget(self.LineAncho, 19, 3, 1, 1)
-        self.LineTecnicoResponsable = QtWidgets.QLineEdit(self.frame_6)
-        self.LineTecnicoResponsable.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineTecnicoResponsable.setObjectName("LineTecnicoResponsable")
-        self.gridLayout_4.addWidget(self.LineTecnicoResponsable, 14, 7, 1, 1)
         self.label_27 = QtWidgets.QLabel(self.frame_6)
         self.label_27.setStyleSheet("border:none;\n"
 "font:20px;")
         self.label_27.setObjectName("label_27")
         self.gridLayout_4.addWidget(self.label_27, 0, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineCoordenadaZ = QtWidgets.QLineEdit(self.frame_6)
-        self.LineCoordenadaZ.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineCoordenadaZ.setObjectName("LineCoordenadaZ")
-        self.gridLayout_4.addWidget(self.LineCoordenadaZ, 11, 11, 1, 1)
-        self.LineCaudalconcedido = QtWidgets.QLineEdit(self.frame_6)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.LineCaudalconcedido.sizePolicy().hasHeightForWidth())
-        self.LineCaudalconcedido.setSizePolicy(sizePolicy)
-        self.LineCaudalconcedido.setMinimumSize(QtCore.QSize(0, 0))
-        self.LineCaudalconcedido.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineCaudalconcedido.setObjectName("LineCaudalconcedido")
-        self.gridLayout_4.addWidget(self.LineCaudalconcedido, 11, 5, 1, 1)
         self.label = QtWidgets.QLabel(self.frame_6)
         self.label.setStyleSheet("border:none;\n"
 "font:20px;")
@@ -1239,26 +583,6 @@ class Ui_Tecnico_juridica(object):
 "")
         self.LineMicrocuenca.setObjectName("LineMicrocuenca")
         self.gridLayout_4.addWidget(self.LineMicrocuenca, 6, 11, 1, 1)
-        self.label_29 = QtWidgets.QLabel(self.frame_6)
-        self.label_29.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_29.setObjectName("label_29")
-        self.gridLayout_4.addWidget(self.label_29, 10, 9, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_8 = QtWidgets.QLabel(self.frame_6)
-        self.label_8.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_8.setObjectName("label_8")
-        self.gridLayout_4.addWidget(self.label_8, 16, 9, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_15 = QtWidgets.QLabel(self.frame_6)
-        self.label_15.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_15.setObjectName("label_15")
-        self.gridLayout_4.addWidget(self.label_15, 16, 11, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_32 = QtWidgets.QLabel(self.frame_6)
-        self.label_32.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_32.setObjectName("label_32")
-        self.gridLayout_4.addWidget(self.label_32, 21, 3, 1, 1, QtCore.Qt.AlignHCenter)
         spacerItem3 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem3, 2, 6, 1, 1)
         self.label_18 = QtWidgets.QLabel(self.frame_6)
@@ -1266,11 +590,6 @@ class Ui_Tecnico_juridica(object):
 "font:20px;")
         self.label_18.setObjectName("label_18")
         self.gridLayout_4.addWidget(self.label_18, 5, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_20 = QtWidgets.QLabel(self.frame_6)
-        self.label_20.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_20.setObjectName("label_20")
-        self.gridLayout_4.addWidget(self.label_20, 10, 5, 1, 1, QtCore.Qt.AlignHCenter)
         self.LineFuente = QtWidgets.QLineEdit(self.frame_6)
         self.LineFuente.setStyleSheet("QLineEdit {\n"
 "\n"
@@ -1320,11 +639,6 @@ class Ui_Tecnico_juridica(object):
 "")
         self.LineFuente.setObjectName("LineFuente")
         self.gridLayout_4.addWidget(self.LineFuente, 2, 9, 1, 1)
-        self.label_14 = QtWidgets.QLabel(self.frame_6)
-        self.label_14.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_14.setObjectName("label_14")
-        self.gridLayout_4.addWidget(self.label_14, 16, 5, 1, 1, QtCore.Qt.AlignHCenter)
         self.ComboCorregimiento = QtWidgets.QComboBox(self.frame_6)
         self.ComboCorregimiento.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.ComboCorregimiento.setStyleSheet("QComboBox {\n"
@@ -1386,104 +700,6 @@ class Ui_Tecnico_juridica(object):
 "font:20px;")
         self.label_26.setObjectName("label_26")
         self.gridLayout_4.addWidget(self.label_26, 0, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineAltura = QtWidgets.QLineEdit(self.frame_6)
-        self.LineAltura.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineAltura.setObjectName("LineAltura")
-        self.gridLayout_4.addWidget(self.LineAltura, 19, 5, 1, 1)
-        self.lineEdit_11 = QtWidgets.QLineEdit(self.frame_6)
-        self.lineEdit_11.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.lineEdit_11.setObjectName("lineEdit_11")
-        self.gridLayout_4.addWidget(self.lineEdit_11, 14, 11, 1, 1)
         self.LineNumeroDoc = QtWidgets.QLineEdit(self.frame_6)
         self.LineNumeroDoc.setStyleSheet("QLineEdit {\n"
 "\n"
@@ -1533,266 +749,6 @@ class Ui_Tecnico_juridica(object):
 "")
         self.LineNumeroDoc.setObjectName("LineNumeroDoc")
         self.gridLayout_4.addWidget(self.LineNumeroDoc, 2, 7, 1, 1)
-        self.label_16 = QtWidgets.QLabel(self.frame_6)
-        self.label_16.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_16.setObjectName("label_16")
-        self.gridLayout_4.addWidget(self.label_16, 18, 7, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_5 = QtWidgets.QLabel(self.frame_6)
-        self.label_5.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_5.setObjectName("label_5")
-        self.gridLayout_4.addWidget(self.label_5, 12, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.LineCaudalTotal = QtWidgets.QLineEdit(self.frame_6)
-        self.LineCaudalTotal.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineCaudalTotal.setObjectName("LineCaudalTotal")
-        self.gridLayout_4.addWidget(self.LineCaudalTotal, 11, 3, 1, 1)
-        self.LineVigencia = QtWidgets.QLineEdit(self.frame_6)
-        self.LineVigencia.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineVigencia.setObjectName("LineVigencia")
-        self.gridLayout_4.addWidget(self.LineVigencia, 17, 7, 1, 1)
-        self.LineTiempoOtor = QtWidgets.QLineEdit(self.frame_6)
-        self.LineTiempoOtor.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineTiempoOtor.setObjectName("LineTiempoOtor")
-        self.gridLayout_4.addWidget(self.LineTiempoOtor, 17, 5, 1, 1)
-        self.LineCoordenadaY = QtWidgets.QLineEdit(self.frame_6)
-        self.LineCoordenadaY.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineCoordenadaY.setObjectName("LineCoordenadaY")
-        self.gridLayout_4.addWidget(self.LineCoordenadaY, 11, 9, 1, 1)
-        self.label_21 = QtWidgets.QLabel(self.frame_6)
-        self.label_21.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_21.setObjectName("label_21")
-        self.gridLayout_4.addWidget(self.label_21, 10, 7, 1, 1, QtCore.Qt.AlignHCenter)
-        self.lineEdit_15 = QtWidgets.QLineEdit(self.frame_6)
-        self.lineEdit_15.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.lineEdit_15.setObjectName("lineEdit_15")
-        self.gridLayout_4.addWidget(self.lineEdit_15, 19, 7, 1, 1)
         self.LineRazonSocial = QtWidgets.QLineEdit(self.frame_6)
         self.LineRazonSocial.setStyleSheet("QLineEdit {\n"
 "\n"
@@ -1891,11 +847,6 @@ class Ui_Tecnico_juridica(object):
 "")
         self.LineVereda.setObjectName("LineVereda")
         self.gridLayout_4.addWidget(self.LineVereda, 6, 5, 1, 1)
-        self.LineNumResolucion = QtWidgets.QLabel(self.frame_6)
-        self.LineNumResolucion.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.LineNumResolucion.setObjectName("LineNumResolucion")
-        self.gridLayout_4.addWidget(self.LineNumResolucion, 12, 9, 1, 1, QtCore.Qt.AlignHCenter)
         self.ComboCuenca = QtWidgets.QComboBox(self.frame_6)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -1957,11 +908,6 @@ class Ui_Tecnico_juridica(object):
         self.ComboCuenca.addItem("")
         self.ComboCuenca.addItem("")
         self.gridLayout_4.addWidget(self.ComboCuenca, 6, 7, 1, 1)
-        self.label_7 = QtWidgets.QLabel(self.frame_6)
-        self.label_7.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_7.setObjectName("label_7")
-        self.gridLayout_4.addWidget(self.label_7, 16, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.ComboMunicipio = QtWidgets.QComboBox(self.frame_6)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -2023,55 +969,6 @@ class Ui_Tecnico_juridica(object):
         self.ComboMunicipio.addItem("")
         self.ComboMunicipio.addItem("")
         self.gridLayout_4.addWidget(self.ComboMunicipio, 2, 11, 1, 1)
-        self.LineObservacionGe = QtWidgets.QLineEdit(self.frame_6)
-        self.LineObservacionGe.setStyleSheet("QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 20px;\n"
-"QLineEdit {\n"
-"\n"
-"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-"    border: none; /* Sin bordes generales */\n"
-"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-"    border-radius: 0px; /* Sin bordes redondeados */\n"
-"    padding: 5px; /* Espaciado interno */\n"
-"    font: 10px;\n"
-"\n"
-"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"\n"
-"}\n"
-"\n"
-"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-"QLineEdit:hover {\n"
-"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-"}\n"
-"\n"
-"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-"QLineEdit:focus {\n"
-"    border-bottom: 2px solid #16344D;\n"
-"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-"}\n"
-"")
-        self.LineObservacionGe.setObjectName("LineObservacionGe")
-        self.gridLayout_4.addWidget(self.LineObservacionGe, 22, 3, 1, 1)
         self.ComboSubcuenca = QtWidgets.QComboBox(self.frame_6)
         self.ComboSubcuenca.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.ComboSubcuenca.setStyleSheet("QComboBox {\n"
@@ -2129,13 +1026,10 @@ class Ui_Tecnico_juridica(object):
         self.ComboSubcuenca.addItem("")
         self.ComboSubcuenca.addItem("")
         self.gridLayout_4.addWidget(self.ComboSubcuenca, 6, 9, 1, 1)
-        self.label_6 = QtWidgets.QLabel(self.frame_6)
-        self.label_6.setStyleSheet("border:none;\n"
-"font:20px;")
-        self.label_6.setObjectName("label_6")
-        self.gridLayout_4.addWidget(self.label_6, 12, 7, 1, 1, QtCore.Qt.AlignHCenter)
-        self.lineEdit_10 = QtWidgets.QLineEdit(self.frame_6)
-        self.lineEdit_10.setStyleSheet("QLineEdit {\n"
+        spacerItem4 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_4.addItem(spacerItem4, 2, 10, 1, 1)
+        self.LineCoordenadaX = QtWidgets.QLineEdit(self.frame_6)
+        self.LineCoordenadaX.setStyleSheet("QLineEdit {\n"
 "\n"
 "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
 "    border: none; /* Sin bordes generales */\n"
@@ -2181,10 +1075,931 @@ class Ui_Tecnico_juridica(object):
 "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
 "}\n"
 "")
-        self.lineEdit_10.setObjectName("lineEdit_10")
-        self.gridLayout_4.addWidget(self.lineEdit_10, 14, 9, 1, 1)
-        spacerItem4 = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_4.addItem(spacerItem4, 2, 10, 1, 1)
+        self.LineCoordenadaX.setObjectName("LineCoordenadaX")
+        self.gridLayout_4.addWidget(self.LineCoordenadaX, 11, 3, 1, 1)
+        self.label_21 = QtWidgets.QLabel(self.frame_6)
+        self.label_21.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_21.setObjectName("label_21")
+        self.gridLayout_4.addWidget(self.label_21, 10, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_29 = QtWidgets.QLabel(self.frame_6)
+        self.label_29.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_29.setObjectName("label_29")
+        self.gridLayout_4.addWidget(self.label_29, 10, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineCoordenadaY = QtWidgets.QLineEdit(self.frame_6)
+        self.LineCoordenadaY.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineCoordenadaY.setObjectName("LineCoordenadaY")
+        self.gridLayout_4.addWidget(self.LineCoordenadaY, 11, 5, 1, 1)
+        self.label_6 = QtWidgets.QLabel(self.frame_6)
+        self.label_6.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_6.setObjectName("label_6")
+        self.gridLayout_4.addWidget(self.label_6, 10, 9, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineTecnicoResponsable = QtWidgets.QLineEdit(self.frame_6)
+        self.LineTecnicoResponsable.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineTecnicoResponsable.setObjectName("LineTecnicoResponsable")
+        self.gridLayout_4.addWidget(self.LineTecnicoResponsable, 11, 9, 1, 1)
+        self.LineNumResolucion3 = QtWidgets.QLabel(self.frame_6)
+        self.LineNumResolucion3.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.LineNumResolucion3.setObjectName("LineNumResolucion3")
+        self.gridLayout_4.addWidget(self.LineNumResolucion3, 12, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineNumResolucion = QtWidgets.QLineEdit(self.frame_6)
+        self.LineNumResolucion.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineNumResolucion.setObjectName("LineNumResolucion")
+        self.gridLayout_4.addWidget(self.LineNumResolucion, 14, 3, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.frame_6)
+        self.label_8.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_8.setObjectName("label_8")
+        self.gridLayout_4.addWidget(self.label_8, 16, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineNumocupaciones = QtWidgets.QLineEdit(self.frame_6)
+        self.LineNumocupaciones.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineNumocupaciones.setObjectName("LineNumocupaciones")
+        self.gridLayout_4.addWidget(self.LineNumocupaciones, 17, 3, 1, 1)
+        self.label_24 = QtWidgets.QLabel(self.frame_6)
+        self.label_24.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_24.setObjectName("label_24")
+        self.gridLayout_4.addWidget(self.label_24, 16, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineAncho = QtWidgets.QLineEdit(self.frame_6)
+        self.LineAncho.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineAncho.setObjectName("LineAncho")
+        self.gridLayout_4.addWidget(self.LineAncho, 17, 5, 1, 1)
+        self.label_17 = QtWidgets.QLabel(self.frame_6)
+        self.label_17.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_17.setObjectName("label_17")
+        self.gridLayout_4.addWidget(self.label_17, 16, 7, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineAltura = QtWidgets.QLineEdit(self.frame_6)
+        self.LineAltura.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineAltura.setObjectName("LineAltura")
+        self.gridLayout_4.addWidget(self.LineAltura, 17, 7, 1, 1)
+        self.label_32 = QtWidgets.QLabel(self.frame_6)
+        self.label_32.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_32.setObjectName("label_32")
+        self.gridLayout_4.addWidget(self.label_32, 18, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineObservacionGe = QtWidgets.QLineEdit(self.frame_6)
+        self.LineObservacionGe.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineObservacionGe.setObjectName("LineObservacionGe")
+        self.gridLayout_4.addWidget(self.LineObservacionGe, 19, 5, 1, 1)
+        self.label_30 = QtWidgets.QLabel(self.frame_6)
+        self.label_30.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_30.setObjectName("label_30")
+        self.gridLayout_4.addWidget(self.label_30, 10, 7, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineCoordenadaZ = QtWidgets.QLineEdit(self.frame_6)
+        self.LineCoordenadaZ.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineCoordenadaZ.setObjectName("LineCoordenadaZ")
+        self.gridLayout_4.addWidget(self.LineCoordenadaZ, 11, 7, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.frame_6)
+        self.label_5.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_5.setObjectName("label_5")
+        self.gridLayout_4.addWidget(self.label_5, 10, 11, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LinePorcentajeOtorgado = QtWidgets.QLineEdit(self.frame_6)
+        self.LinePorcentajeOtorgado.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LinePorcentajeOtorgado.setObjectName("LinePorcentajeOtorgado")
+        self.gridLayout_4.addWidget(self.LinePorcentajeOtorgado, 11, 11, 1, 1)
+        self.label_31 = QtWidgets.QLabel(self.frame_6)
+        self.label_31.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_31.setObjectName("label_31")
+        self.gridLayout_4.addWidget(self.label_31, 18, 7, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineExpedienteRelacionado = QtWidgets.QLineEdit(self.frame_6)
+        self.LineExpedienteRelacionado.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineExpedienteRelacionado.setObjectName("LineExpedienteRelacionado")
+        self.gridLayout_4.addWidget(self.LineExpedienteRelacionado, 19, 7, 1, 1)
+        self.LineFecharesolucion34 = QtWidgets.QLabel(self.frame_6)
+        self.LineFecharesolucion34.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.LineFecharesolucion34.setObjectName("LineFecharesolucion34")
+        self.gridLayout_4.addWidget(self.LineFecharesolucion34, 12, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_7 = QtWidgets.QLabel(self.frame_6)
+        self.label_7.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_7.setObjectName("label_7")
+        self.gridLayout_4.addWidget(self.label_7, 12, 7, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineFechacomunicacion = QtWidgets.QLineEdit(self.frame_6)
+        self.LineFechacomunicacion.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineFechacomunicacion.setObjectName("LineFechacomunicacion")
+        self.gridLayout_4.addWidget(self.LineFechacomunicacion, 14, 7, 1, 1)
+        self.LineFecharesolucion = QtWidgets.QLineEdit(self.frame_6)
+        self.LineFecharesolucion.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineFecharesolucion.setObjectName("LineFecharesolucion")
+        self.gridLayout_4.addWidget(self.LineFecharesolucion, 14, 5, 1, 1)
+        self.label_23 = QtWidgets.QLabel(self.frame_6)
+        self.label_23.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_23.setObjectName("label_23")
+        self.gridLayout_4.addWidget(self.label_23, 12, 11, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineVigencia = QtWidgets.QLineEdit(self.frame_6)
+        self.LineVigencia.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineVigencia.setObjectName("LineVigencia")
+        self.gridLayout_4.addWidget(self.LineVigencia, 14, 11, 1, 1)
+        self.label_14 = QtWidgets.QLabel(self.frame_6)
+        self.label_14.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_14.setObjectName("label_14")
+        self.gridLayout_4.addWidget(self.label_14, 12, 9, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineTiempoOtor = QtWidgets.QLineEdit(self.frame_6)
+        self.LineTiempoOtor.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineTiempoOtor.setObjectName("LineTiempoOtor")
+        self.gridLayout_4.addWidget(self.LineTiempoOtor, 14, 9, 1, 1)
+        self.label_15 = QtWidgets.QLabel(self.frame_6)
+        self.label_15.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_15.setObjectName("label_15")
+        self.gridLayout_4.addWidget(self.label_15, 16, 9, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineLargo = QtWidgets.QLineEdit(self.frame_6)
+        self.LineLargo.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineLargo.setObjectName("LineLargo")
+        self.gridLayout_4.addWidget(self.LineLargo, 17, 9, 1, 1)
+        self.label_25 = QtWidgets.QLabel(self.frame_6)
+        self.label_25.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_25.setObjectName("label_25")
+        self.gridLayout_4.addWidget(self.label_25, 16, 11, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_16 = QtWidgets.QLabel(self.frame_6)
+        self.label_16.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_16.setObjectName("label_16")
+        self.gridLayout_4.addWidget(self.label_16, 18, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineAreaOcupar = QtWidgets.QLineEdit(self.frame_6)
+        self.LineAreaOcupar.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineAreaOcupar.setObjectName("LineAreaOcupar")
+        self.gridLayout_4.addWidget(self.LineAreaOcupar, 19, 3, 1, 1)
+        self.LineVolumen = QtWidgets.QLineEdit(self.frame_6)
+        self.LineVolumen.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineVolumen.setObjectName("LineVolumen")
+        self.gridLayout_4.addWidget(self.LineVolumen, 17, 11, 1, 1)
         self.gridLayout_5.addWidget(self.frame_6, 0, 0, 1, 1)
         self.verticalLayout.addWidget(self.frame_5)
         self.stackedWidget_2.addWidget(self.stackedWidget_2Page1)
@@ -2197,6 +2012,9 @@ class Ui_Tecnico_juridica(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Navbar"))
+        self.BtnCrear.setText(_translate("Form", " Crear"))
+        self.BtnActualizar.setText(_translate("Form", " Actualizar"))
+        self.BtnBorrar.setText(_translate("Form", " Borrar"))
         item = self.TablaTecnicoJuridica.verticalHeaderItem(0)
         item.setText(_translate("Form", "New Row"))
         item = self.TablaTecnicoJuridica.verticalHeaderItem(1)
@@ -2266,89 +2084,56 @@ class Ui_Tecnico_juridica(object):
         item = self.TablaTecnicoJuridica.horizontalHeaderItem(9)
         item.setText(_translate("Form", "Microcuenca"))
         item = self.TablaTecnicoJuridica.horizontalHeaderItem(10)
-        item.setText(_translate("Form", "Caudal total"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(11)
-        item.setText(_translate("Form", "Caudal concedido"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(12)
         item.setText(_translate("Form", "X"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(13)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(11)
         item.setText(_translate("Form", "Y"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(14)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(12)
         item.setText(_translate("Form", "Z"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(15)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(13)
         item.setText(_translate("Form", "Porcentaje"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(16)
-        item.setText(_translate("Form", "Uso"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(17)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(14)
         item.setText(_translate("Form", "Tecnico"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(18)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(15)
         item.setText(_translate("Form", "Num Resolución"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(19)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(16)
         item.setText(_translate("Form", "Fecha Resolución "))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(20)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(17)
         item.setText(_translate("Form", "Fecha Comunicacion"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(21)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(18)
         item.setText(_translate("Form", "Tiempo otorgado"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(22)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(19)
         item.setText(_translate("Form", "Vigecia"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(23)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(20)
         item.setText(_translate("Form", "Num Ocupaciones"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(24)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(21)
         item.setText(_translate("Form", "Largo"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(25)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(22)
         item.setText(_translate("Form", "Ancho"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(26)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(23)
         item.setText(_translate("Form", "Altura"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(27)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(24)
         item.setText(_translate("Form", "Area ocupación"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(28)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(25)
         item.setText(_translate("Form", "Volumen"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(29)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(26)
         item.setText(_translate("Form", "Exp relacionado"))
-        item = self.TablaTecnicoJuridica.horizontalHeaderItem(30)
+        item = self.TablaTecnicoJuridica.horizontalHeaderItem(27)
         item.setText(_translate("Form", "Observaciones"))
-        self.BtnCrear.setText(_translate("Form", " Crear"))
-        self.BtnActualizar.setText(_translate("Form", " Actualizar"))
-        self.BtnBorrar.setText(_translate("Form", " Borrar"))
-        self.LineFecharesolucion.setText(_translate("Form", "Fecha resolución:"))
         self.label_10.setText(_translate("Form", "Cuenca:"))
-        self.label_30.setText(_translate("Form", "Coordenada Z:"))
         self.label_9.setText(_translate("Form", "Municipio:"))
-        self.label_24.setText(_translate("Form", "Ancho:"))
-        self.label_25.setText(_translate("Form", "Volumen:"))
-        self.label_11.setText(_translate("Form", "Caudal Total:"))
         self.label_28.setText(_translate("Form", "Número de documento:"))
-        self.label_31.setText(_translate("Form", "Expediente Relacionado:"))
-        self.label_23.setText(_translate("Form", "Vigencia:"))
-        self.ComboUso.setItemText(0, _translate("Form", "Nuevo elemento"))
-        self.ComboUso.setItemText(1, _translate("Form", "Nuevo elemento"))
-        self.ComboUso.setItemText(2, _translate("Form", "Nuevo elemento"))
-        self.ComboUso.setItemText(3, _translate("Form", "Nuevo elemento"))
-        self.label_12.setText(_translate("Form", "Uso:"))
-        self.label_17.setText(_translate("Form", "Altura"))
         self.label_19.setText(_translate("Form", "Subcuenca:"))
         self.label_2.setText(_translate("Form", "Vereda:"))
         self.label_4.setText(_translate("Form", "Microcuenca:"))
         self.label_27.setText(_translate("Form", "Razon Social:"))
         self.label.setText(_translate("Form", "Fuente:"))
-        self.label_29.setText(_translate("Form", "Coordenada Y:"))
-        self.label_8.setText(_translate("Form", "Numero de ocupaciones:"))
-        self.label_15.setText(_translate("Form", "Largo:"))
-        self.label_32.setText(_translate("Form", "Observación General:"))
         self.label_18.setText(_translate("Form", "Corregimiento:"))
-        self.label_20.setText(_translate("Form", "Caudal Concedido:"))
-        self.label_14.setText(_translate("Form", "Tiempo otorgado:"))
         self.ComboCorregimiento.setItemText(0, _translate("Form", "Nuevo elemento"))
         self.ComboCorregimiento.setItemText(1, _translate("Form", "Nuevo elemento"))
         self.ComboCorregimiento.setItemText(2, _translate("Form", "Nuevo elemento"))
         self.label_26.setText(_translate("Form", "Número de expediente:"))
-        self.label_16.setText(_translate("Form", "Área a ocupar:"))
-        self.label_5.setText(_translate("Form", "Porcentaje Otorgado:"))
-        self.label_21.setText(_translate("Form", "Coordenada X:"))
-        self.LineNumResolucion.setText(_translate("Form", "Num resolución:"))
         self.ComboCuenca.setItemText(0, _translate("Form", "Nuevo elemento"))
         self.ComboCuenca.setItemText(1, _translate("Form", "Nuevo elemento"))
-        self.label_7.setText(_translate("Form", "Fecha comunicación:"))
         self.ComboMunicipio.setItemText(0, _translate("Form", "Nuevo elemento"))
         self.ComboMunicipio.setItemText(1, _translate("Form", "Nuevo elemento"))
         self.ComboMunicipio.setItemText(2, _translate("Form", "Nuevo elemento"))
@@ -2356,4 +2141,21 @@ class Ui_Tecnico_juridica(object):
         self.ComboSubcuenca.setItemText(1, _translate("Form", "Nuevo elemento"))
         self.ComboSubcuenca.setItemText(2, _translate("Form", "Nuevo elemento"))
         self.ComboSubcuenca.setItemText(3, _translate("Form", "Nuevo elemento"))
+        self.label_21.setText(_translate("Form", "Coordenada X:"))
+        self.label_29.setText(_translate("Form", "Coordenada Y:"))
         self.label_6.setText(_translate("Form", "Técnico responsable:"))
+        self.LineNumResolucion3.setText(_translate("Form", "Num resolución:"))
+        self.label_8.setText(_translate("Form", "Numero de ocupaciones:"))
+        self.label_24.setText(_translate("Form", "Ancho:"))
+        self.label_17.setText(_translate("Form", "Altura"))
+        self.label_32.setText(_translate("Form", "Observación General:"))
+        self.label_30.setText(_translate("Form", "Coordenada Z:"))
+        self.label_5.setText(_translate("Form", "Porcentaje Otorgado:"))
+        self.label_31.setText(_translate("Form", "Expediente Relacionado:"))
+        self.LineFecharesolucion34.setText(_translate("Form", "Fecha resolución:"))
+        self.label_7.setText(_translate("Form", "Fecha comunicación:"))
+        self.label_23.setText(_translate("Form", "Vigencia:"))
+        self.label_14.setText(_translate("Form", "Tiempo otorgado:"))
+        self.label_15.setText(_translate("Form", "Largo:"))
+        self.label_25.setText(_translate("Form", "Volumen:"))
+        self.label_16.setText(_translate("Form", "Área a ocupar:"))
