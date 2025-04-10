@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1556</width>
-    <height>959</height>
+    <width>1552</width>
+    <height>950</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -71,7 +71,7 @@ background-color: rgb(255, 255, 255);</string>
             </property>
             <layout class="QGridLayout" name="gridLayout">
              <item row="2" column="3" alignment="Qt::AlignTop">
-              <widget class="QComboBox" name="comboBox_2">
+              <widget class="QComboBox" name="ComboTipoConcecion">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
@@ -208,7 +208,7 @@ font:20px;</string>
               </spacer>
              </item>
              <item row="2" column="1" alignment="Qt::AlignTop">
-              <widget class="QComboBox" name="comboBox">
+              <widget class="QComboBox" name="ComboAreaRegistro">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
                </property>
@@ -321,7 +321,7 @@ QComboBox QAbstractItemView::item:selected {
            </widget>
           </item>
           <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-           <widget class="QListWidget" name="listWidget">
+           <widget class="QListWidget" name="ListColumnas">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -487,7 +487,7 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
               </spacer>
              </item>
              <item alignment="Qt::AlignHCenter">
-              <widget class="QLineEdit" name="lineEdit">
+              <widget class="QLineEdit" name="LineBuscador">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -621,7 +621,7 @@ QLineEdit:focus {
            </spacer>
           </item>
           <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-           <widget class="QTableWidget" name="tableWidget">
+           <widget class="QTableWidget" name="TablaRegistro">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -900,7 +900,7 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
            </spacer>
           </item>
           <item alignment="Qt::AlignHCenter">
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="BtnExcel">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
