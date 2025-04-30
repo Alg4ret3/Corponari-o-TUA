@@ -160,7 +160,7 @@ QComboBox QAbstractItemView::item:selected {
 font:20px;</string>
                </property>
                <property name="text">
-                <string>Tipo de concesión:</string>
+                <string>Tipo de Permiso:</string>
                </property>
               </widget>
              </item>
@@ -171,7 +171,7 @@ font:20px;</string>
 font:20px;</string>
                </property>
                <property name="text">
-                <string>Area de Registro:</string>
+                <string>Zona:</string>
                </property>
               </widget>
              </item>

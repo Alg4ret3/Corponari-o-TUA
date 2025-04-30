@@ -489,6 +489,138 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
                </column>
               </widget>
              </item>
+             <item row="1" column="0" alignment="Qt::AlignHCenter">
+              <widget class="QFrame" name="frame_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLineEdit" name="Linebuscador">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 20px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QToolButton" name="toolButton_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>45</width>
+                    <height>45</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../../assets/iconos/people.png</normaloff>../../assets/iconos/people.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>32</width>
+                    <height>32</height>
+                   </size>
+                  </property>
+                  <property name="toolButtonStyle">
+                   <enum>Qt::ToolButtonTextBesideIcon</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
              <item row="0" column="0">
               <widget class="QFrame" name="frame_6">
                <property name="sizePolicy">
@@ -558,6 +690,346 @@ QLineEdit:focus {
                 <enum>QFrame::Raised</enum>
                </property>
                <layout class="QGridLayout" name="gridLayout">
+                <item row="10" column="1" alignment="Qt::AlignLeft">
+                 <widget class="QCheckBox" name="checkUsoSilvicultura">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000; /* Borde negro inicial */
+    background-color: #f5f5f5; /* Gris claro */
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #16344D; /* Azul oscuro cuando está activo */
+    border: 2px solid #16344D;
+}
+
+QCheckBox {
+    color: #000000; /* Texto negro */
+    font-size: 18px; /* Letra más grande */
+    padding-left: 8px;
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Riego y Silvicultura</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="10" column="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_9">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Caudal Concedido:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="24" column="5">
+                 <widget class="QLineEdit" name="ConcedidoAgricultura"/>
+                </item>
+                <item row="23" column="1" alignment="Qt::AlignLeft">
+                 <widget class="QCheckBox" name="checkUsoAgricultura">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000; /* Borde negro inicial */
+    background-color: #f5f5f5; /* Gris claro */
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #16344D; /* Azul oscuro cuando está activo */
+    border: 2px solid #16344D;
+}
+
+QCheckBox {
+    color: #000000; /* Texto negro */
+    font-size: 18px; /* Letra más grande */
+    padding-left: 8px;
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Agricultura y pesca</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="10" column="3" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_7">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Tipo de cultivo: </string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="22" column="3">
+                 <spacer name="verticalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="7" column="1" alignment="Qt::AlignLeft|Qt::AlignBottom">
+                 <widget class="QCheckBox" name="checkUsoDomestico">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000; /* Borde negro inicial */
+    background-color: #f5f5f5; /* Gris claro */
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #16344D; /* Azul oscuro cuando está activo */
+    border: 2px solid #16344D;
+}
+
+QCheckBox {
+    color: #000000; /* Texto negro */
+    font-size: 18px; /* Letra más grande */
+    padding-left: 8px;
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Abastecimiento Doméstico</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Número de expediente:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="3">
+                 <spacer name="verticalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="7" column="3" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_5">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Permanentes: </string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="18" column="3">
+                 <widget class="QLineEdit" name="ObservacionSilvicultura"/>
+                </item>
+                <item row="0" column="6">
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="8" column="3">
+                 <widget class="QLineEdit" name="ObservacionDomestico"/>
+                </item>
+                <item row="20" column="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_11">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Caudal Concedido:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="30" column="1">
+                 <widget class="QLabel" name="label_3">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="26" column="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_14">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Caudal Concedido:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="LineNumeroExpediente">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 20px;
+QLineEdit {
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font: 10px;
+
+	margin-right: 8px; /* Margen a la derecha de 10px */
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+
+}
+
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
+}
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_6">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Caudal Concedido:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_2">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Razon Social:</string>
+                  </property>
+                 </widget>
+                </item>
                 <item row="26" column="1">
                  <widget class="QListWidget" name="listUsos">
                   <property name="sizePolicy">
@@ -690,6 +1162,63 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
                   </item>
                  </widget>
                 </item>
+                <item row="1" column="4">
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="30" column="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_15">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Caudal Total:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="21" column="5">
+                 <widget class="QLineEdit" name="ConcedidoAbrevederos"/>
+                </item>
+                <item row="0" column="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_4">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Número de documento:</string>
+                  </property>
+                 </widget>
+                </item>
                 <item row="20" column="1" alignment="Qt::AlignLeft">
                  <widget class="QCheckBox" name="checkUsoAbrevederos">
                   <property name="cursor">
@@ -725,6 +1254,79 @@ QCheckBox {
                   </property>
                  </widget>
                 </item>
+                <item row="26" column="3" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_12">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Observaciones:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="19" column="3">
+                 <spacer name="verticalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="24" column="3">
+                 <widget class="QLineEdit" name="ObservacionAgricultura"/>
+                </item>
+                <item row="1" column="0">
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="25" column="3">
+                 <spacer name="verticalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="31" column="5">
+                 <widget class="QLineEdit" name="CaudalTotal"/>
+                </item>
+                <item row="23" column="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_10">
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Caudal Concedido:</string>
+                  </property>
+                 </widget>
+                </item>
                 <item row="20" column="3" alignment="Qt::AlignHCenter">
                  <widget class="QLabel" name="label_8">
                   <property name="styleSheet">
@@ -736,19 +1338,25 @@ font:20px;</string>
                   </property>
                  </widget>
                 </item>
-                <item row="26" column="5" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_14">
+                <item row="18" column="5">
+                 <widget class="QLineEdit" name="ConcedidoSilvicultura"/>
+                </item>
+                <item row="27" column="5">
+                 <widget class="QLineEdit" name="ConcedidoListaUsos"/>
+                </item>
+                <item row="23" column="3" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_13">
                   <property name="styleSheet">
                    <string notr="true">border:none;
 font:20px;</string>
                   </property>
                   <property name="text">
-                   <string>Caudal Concedido:</string>
+                   <string>Tipo de animales:</string>
                   </property>
                  </widget>
                 </item>
-                <item row="18" column="3">
-                 <widget class="QLineEdit" name="ObservacionSilvicultura"/>
+                <item row="21" column="3">
+                 <widget class="QLineEdit" name="ObservacionAbrevederos"/>
                 </item>
                 <item row="1" column="5">
                  <widget class="QLineEdit" name="LineNumeroDoc">
@@ -808,491 +1416,6 @@ QLineEdit:focus {
                   </property>
                  </widget>
                 </item>
-                <item row="24" column="3">
-                 <widget class="QLineEdit" name="ObservacionAgricultura"/>
-                </item>
-                <item row="31" column="5">
-                 <widget class="QLineEdit" name="CaudalTotal"/>
-                </item>
-                <item row="1" column="3">
-                 <widget class="QLineEdit" name="LineRazonSocial"/>
-                </item>
-                <item row="1" column="0">
-                 <spacer name="horizontalSpacer_4">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="1" column="4">
-                 <spacer name="horizontalSpacer_3">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QLineEdit" name="LineNumeroExpediente">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 20px;
-QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 10px;
-
-	margin-right: 8px; /* Margen a la derecha de 10px */
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="9" column="3">
-                 <spacer name="verticalSpacer_3">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="26" column="3" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_12">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Observaciones:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="30" column="1">
-                 <widget class="QLabel" name="label_3">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item row="21" column="3">
-                 <widget class="QLineEdit" name="ObservacionAbrevederos"/>
-                </item>
-                <item row="22" column="3">
-                 <spacer name="verticalSpacer_5">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="0" column="6">
-                 <spacer name="horizontalSpacer_5">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="23" column="1" alignment="Qt::AlignLeft">
-                 <widget class="QCheckBox" name="checkUsoAgricultura">
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QCheckBox::indicator {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #000000; /* Borde negro inicial */
-    background-color: #f5f5f5; /* Gris claro */
-    border-radius: 4px;
-}
-
-QCheckBox::indicator:hover {
-    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */
-}
-
-QCheckBox::indicator:checked {
-    background-color: #16344D; /* Azul oscuro cuando está activo */
-    border: 2px solid #16344D;
-}
-
-QCheckBox {
-    color: #000000; /* Texto negro */
-    font-size: 18px; /* Letra más grande */
-    padding-left: 8px;
-}
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Agricultura y pesca</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="8" column="3">
-                 <widget class="QLineEdit" name="ObservacionDomestico"/>
-                </item>
-                <item row="7" column="5" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_6">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Caudal Concedido:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="10" column="5" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_9">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Caudal Concedido:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="27" column="5">
-                 <widget class="QLineEdit" name="ConcedidoListaUsos"/>
-                </item>
-                <item row="7" column="3" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_5">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Permanentes: </string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="3" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_2">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Razon Social:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="19" column="3">
-                 <spacer name="verticalSpacer_4">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="20" column="5" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_11">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Caudal Concedido:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="10" column="1" alignment="Qt::AlignLeft">
-                 <widget class="QCheckBox" name="checkUsoSilvicultura">
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QCheckBox::indicator {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #000000; /* Borde negro inicial */
-    background-color: #f5f5f5; /* Gris claro */
-    border-radius: 4px;
-}
-
-QCheckBox::indicator:hover {
-    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */
-}
-
-QCheckBox::indicator:checked {
-    background-color: #16344D; /* Azul oscuro cuando está activo */
-    border: 2px solid #16344D;
-}
-
-QCheckBox {
-    color: #000000; /* Texto negro */
-    font-size: 18px; /* Letra más grande */
-    padding-left: 8px;
-}
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Riego y Silvicultura</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="27" column="3">
-                 <widget class="QLineEdit" name="ObservacionListaUsos"/>
-                </item>
-                <item row="21" column="5">
-                 <widget class="QLineEdit" name="ConcedidoAbrevederos"/>
-                </item>
-                <item row="1" column="2">
-                 <spacer name="horizontalSpacer_2">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="25" column="3">
-                 <spacer name="verticalSpacer_6">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="7" column="1" alignment="Qt::AlignLeft|Qt::AlignBottom">
-                 <widget class="QCheckBox" name="checkUsoDomestico">
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QCheckBox::indicator {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #000000; /* Borde negro inicial */
-    background-color: #f5f5f5; /* Gris claro */
-    border-radius: 4px;
-}
-
-QCheckBox::indicator:hover {
-    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */
-}
-
-QCheckBox::indicator:checked {
-    background-color: #16344D; /* Azul oscuro cuando está activo */
-    border: 2px solid #16344D;
-}
-
-QCheckBox {
-    color: #000000; /* Texto negro */
-    font-size: 18px; /* Letra más grande */
-    padding-left: 8px;
-}
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Abastecimiento Doméstico</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="30" column="5" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_15">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Caudal Total:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="1" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Número de expediente:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="5" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_4">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Número de documento:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="23" column="5" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_10">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Caudal Concedido:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="3">
-                 <spacer name="verticalSpacer">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeType">
-                   <enum>QSizePolicy::Fixed</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item row="10" column="3" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_7">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Tipo de cultivo: </string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="24" column="5">
-                 <widget class="QLineEdit" name="ConcedidoAgricultura"/>
-                </item>
-                <item row="18" column="5">
-                 <widget class="QLineEdit" name="ConcedidoSilvicultura"/>
-                </item>
-                <item row="8" column="5">
-                 <widget class="QLineEdit" name="ConcedidoDomestico"/>
-                </item>
-                <item row="23" column="3" alignment="Qt::AlignHCenter">
-                 <widget class="QLabel" name="label_13">
-                  <property name="styleSheet">
-                   <string notr="true">border:none;
-font:20px;</string>
-                  </property>
-                  <property name="text">
-                   <string>Tipo de animales:</string>
-                  </property>
-                 </widget>
-                </item>
                 <item row="28" column="5">
                  <spacer name="verticalSpacer_2">
                   <property name="orientation">
@@ -1309,137 +1432,28 @@ font:20px;</string>
                   </property>
                  </spacer>
                 </item>
-               </layout>
-              </widget>
-             </item>
-             <item row="1" column="0" alignment="Qt::AlignHCenter">
-              <widget class="QFrame" name="frame_3">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>250</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_2">
-                <item>
-                 <widget class="QLineEdit" name="Linebuscador">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>300</width>
-                    <height>25</height>
-                   </size>
-                  </property>
+                <item row="1" column="3">
+                 <widget class="QLineEdit" name="LineRazonSocial"/>
+                </item>
+                <item row="27" column="3">
+                 <widget class="QLineEdit" name="ObservacionListaUsos"/>
+                </item>
+                <item row="8" column="5">
+                 <widget class="QLineEdit" name="ConcedidoDomestico"/>
+                </item>
+                <item row="30" column="3" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_16">
                   <property name="styleSheet">
-                   <string notr="true">QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 20px;
-QLineEdit {
-
-    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
-    border: none; /* Sin bordes generales */
-    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
-    border-radius: 0px; /* Sin bordes redondeados */
-    padding: 5px; /* Espaciado interno */
-    font: 10px;
-
-	margin-right: 8px; /* Margen a la derecha de 10px */
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-
-}
-
-/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
-QLineEdit:hover {
-    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
-}
-
-/* Al hacer clic (foco), se mantiene igual que el hover */
-QLineEdit:focus {
-    border-bottom: 2px solid #16344D;
-    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
-}
-</string>
+                   <string notr="true">border:none;
+font:20px;</string>
+                  </property>
+                  <property name="text">
+                   <string>Porcentaje Otorgado:</string>
                   </property>
                  </widget>
                 </item>
-                <item>
-                 <widget class="QToolButton" name="toolButton_2">
-                  <property name="minimumSize">
-                   <size>
-                    <width>45</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>30</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">border:none;</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>../../assets/iconos/people.png</normaloff>../../assets/iconos/people.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>32</width>
-                    <height>32</height>
-                   </size>
-                  </property>
-                  <property name="toolButtonStyle">
-                   <enum>Qt::ToolButtonTextBesideIcon</enum>
-                  </property>
-                 </widget>
+                <item row="31" column="3">
+                 <widget class="QLineEdit" name="LinePorcentaje"/>
                 </item>
                </layout>
               </widget>

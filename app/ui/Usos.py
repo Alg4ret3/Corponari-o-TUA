@@ -15,18 +15,14 @@ class Ui_Usos(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1956, 1307)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
         Form.setSizePolicy(sizePolicy)
         Form.setMinimumSize(QtCore.QSize(300, 600))
-        Form.setStyleSheet(
-            "background-color: rgb(238, 238, 238);\n"
-            "background-color: rgb(255, 255, 255);"
-        )
+        Form.setStyleSheet("background-color: rgb(238, 238, 238);\n"
+"background-color: rgb(255, 255, 255);")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(Form)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.frame = QtWidgets.QFrame(Form)
@@ -54,9 +50,7 @@ class Ui_Usos(object):
         self.gridLayout_3 = QtWidgets.QGridLayout(self.frame_5)
         self.gridLayout_3.setObjectName("gridLayout_3")
         self.frame_4 = QtWidgets.QFrame(self.frame_5)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.frame_4.sizePolicy().hasHeightForWidth())
@@ -67,206 +61,174 @@ class Ui_Usos(object):
         self.frame_4.setObjectName("frame_4")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_4)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        spacerItem = QtWidgets.QSpacerItem(
-            1300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem = QtWidgets.QSpacerItem(1300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_4.addItem(spacerItem)
         self.BtnCrear = QtWidgets.QPushButton(self.frame_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnCrear.sizePolicy().hasHeightForWidth())
         self.BtnCrear.setSizePolicy(sizePolicy)
         self.BtnCrear.setMinimumSize(QtCore.QSize(180, 45))
         self.BtnCrear.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnCrear.setStyleSheet(
-            "QPushButton {\n"
-            "    background-color: #16344D; /* Color de fondo */\n"
-            "    border-radius: 5px; /* Bordes redondeados */\n"
-            "    color: white; /* Color del texto */\n"
-            "    padding: 5px 10px; /* Espaciado interno */\n"
-            "    border: none; /* Elimina el borde predeterminado */\n"
-            "    font-size: 22px; /* Tamaño de fuente */\n"
-            "    text-align: center; /* Alinea el texto a la izquierda */\n"
-            "}\n"
-            "\n"
-            "QPushButton:hover {\n"
-            "    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */\n"
-            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-            "}\n"
-            "\n"
-            "QPushButton::icon {\n"
-            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-            "}\n"
-            ""
-        )
+        self.BtnCrear.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 5px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
         icon = QtGui.QIcon()
-        icon.addPixmap(
-            QtGui.QPixmap("assets/iconos/anadir.png"),
-            QtGui.QIcon.Normal,
-            QtGui.QIcon.Off,
-        )
+        icon.addPixmap(QtGui.QPixmap("assets/iconos/anadir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.BtnCrear.setIcon(icon)
         self.BtnCrear.setIconSize(QtCore.QSize(24, 24))
         self.BtnCrear.setObjectName("BtnCrear")
         self.horizontalLayout_4.addWidget(self.BtnCrear, 0, QtCore.Qt.AlignRight)
         self.BtnActualizar = QtWidgets.QPushButton(self.frame_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.BtnActualizar.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.BtnActualizar.sizePolicy().hasHeightForWidth())
         self.BtnActualizar.setSizePolicy(sizePolicy)
         self.BtnActualizar.setMinimumSize(QtCore.QSize(180, 45))
         self.BtnActualizar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnActualizar.setStyleSheet(
-            "QPushButton {\n"
-            "    background-color: #16344D; /* Color de fondo */\n"
-            "    border-radius: 2px; /* Bordes redondeados */\n"
-            "    color: white; /* Color del texto */\n"
-            "    padding: 5px 10px; /* Espaciado interno */\n"
-            "    border: none; /* Elimina el borde predeterminado */\n"
-            "    font-size: 22px; /* Tamaño de fuente */\n"
-            "    text-align: Center; /* Alinea el texto a la izquierda */\n"
-            "}\n"
-            "\n"
-            "QPushButton:hover {\n"
-            "    background-color: #525C5E; /* Color de fondo al pasar el mouse */\n"
-            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-            "}\n"
-            "\n"
-            "QPushButton::icon {\n"
-            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-            "}\n"
-            ""
-        )
+        self.BtnActualizar.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 2px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: Center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #525C5E; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(
-            QtGui.QPixmap("assets/iconos/actualizar-flecha.png"),
-            QtGui.QIcon.Normal,
-            QtGui.QIcon.Off,
-        )
+        icon1.addPixmap(QtGui.QPixmap("assets/iconos/actualizar-flecha.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.BtnActualizar.setIcon(icon1)
         self.BtnActualizar.setIconSize(QtCore.QSize(24, 24))
         self.BtnActualizar.setObjectName("BtnActualizar")
         self.horizontalLayout_4.addWidget(self.BtnActualizar, 0, QtCore.Qt.AlignRight)
         self.BtnBorrar = QtWidgets.QPushButton(self.frame_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.BtnBorrar.sizePolicy().hasHeightForWidth())
         self.BtnBorrar.setSizePolicy(sizePolicy)
         self.BtnBorrar.setMinimumSize(QtCore.QSize(180, 45))
         self.BtnBorrar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.BtnBorrar.setStyleSheet(
-            "QPushButton {\n"
-            "    background-color: #16344D; /* Color de fondo */\n"
-            "    border-radius: 5px; /* Bordes redondeados */\n"
-            "    color: white; /* Color del texto */\n"
-            "    padding: 5px 10px; /* Espaciado interno */\n"
-            "    border: none; /* Elimina el borde predeterminado */\n"
-            "    font-size: 22px; /* Tamaño de fuente */\n"
-            "    text-align: center; /* Alinea el texto a la izquierda */\n"
-            "}\n"
-            "\n"
-            "QPushButton:hover {\n"
-            "    background-color: #D32F2F  ; /* Color de fondo al pasar el mouse */\n"
-            "    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
-            "    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
-            "    transition: all 0.3s ease-in-out; /* Transición suave */\n"
-            "}\n"
-            "\n"
-            "QPushButton::icon {\n"
-            "    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
-            "}\n"
-            ""
-        )
+        self.BtnBorrar.setStyleSheet("QPushButton {\n"
+"    background-color: #16344D; /* Color de fondo */\n"
+"    border-radius: 5px; /* Bordes redondeados */\n"
+"    color: white; /* Color del texto */\n"
+"    padding: 5px 10px; /* Espaciado interno */\n"
+"    border: none; /* Elimina el borde predeterminado */\n"
+"    font-size: 22px; /* Tamaño de fuente */\n"
+"    text-align: center; /* Alinea el texto a la izquierda */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #D32F2F  ; /* Color de fondo al pasar el mouse */\n"
+"    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */\n"
+"    transform: scale(1.02); /* Ligero aumento al pasar el mouse */\n"
+"    transition: all 0.3s ease-in-out; /* Transición suave */\n"
+"}\n"
+"\n"
+"QPushButton::icon {\n"
+"    padding-right: 5px; /* Espaciado entre el icono y el texto */\n"
+"}\n"
+"")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(
-            QtGui.QPixmap("assets/iconos/borrar.png"),
-            QtGui.QIcon.Normal,
-            QtGui.QIcon.Off,
-        )
+        icon2.addPixmap(QtGui.QPixmap("assets/iconos/borrar.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.BtnBorrar.setIcon(icon2)
         self.BtnBorrar.setIconSize(QtCore.QSize(28, 28))
         self.BtnBorrar.setObjectName("BtnBorrar")
         self.horizontalLayout_4.addWidget(self.BtnBorrar, 0, QtCore.Qt.AlignRight)
         self.gridLayout_3.addWidget(self.frame_4, 3, 0, 1, 1)
         self.TablaUsos = QtWidgets.QTableWidget(self.frame_5)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.TablaUsos.sizePolicy().hasHeightForWidth())
         self.TablaUsos.setSizePolicy(sizePolicy)
         self.TablaUsos.setMinimumSize(QtCore.QSize(500, 150))
-        self.TablaUsos.setStyleSheet(
-            "QTableWidget {\n"
-            "    background-color: #f5f5f5; /* Fondo gris claro */\n"
-            "    border: 1px solid #CCCCCC; /* Borde suave */\n"
-            "    border-radius: 2px; /* Bordes redondeados */\n"
-            "    font-size: 18px; /* Tamaño de fuente */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    gridline-color: #DDDDDD; /* Color de las líneas de la cuadrícula */\n"
-            "}\n"
-            "\n"
-            "QTableWidget::item {\n"
-            "    padding: 5px; /* Espaciado de las celdas */\n"
-            "    border-radius: 2px; /* Bordes redondeados en las celdas */\n"
-            "}\n"
-            "\n"
-            "QTableWidget::item:hover {\n"
-            "    background-color: #f0f0f0; /* Fondo claro al pasar el mouse */\n"
-            "    color: #16344D; /* Texto azul al pasar el mouse */\n"
-            "}\n"
-            "\n"
-            "/* Barra de desplazamiento vertical y horizontal */\n"
-            "QScrollBar:vertical, QScrollBar:horizontal {\n"
-            "    \n"
-            "    border-radius: 15px; /* Bordes redondeados */\n"
-            "    background-color: #f5f5f5; /* Fondo gris claro */\n"
-            "    width: 7px; /* Ancho de la barra vertical */\n"
-            "    height: 7px; /* Alto de la barra horizontal */\n"
-            "}\n"
-            "\n"
-            '/* Manejador de la barra de desplazamiento (el "handle") */\n'
-            "QScrollBar::handle:vertical, QScrollBar::handle:horizontal {\n"
-            "    background-color: #16344D; /* Barra de desplazamiento en azul */\n"
-            "    border-radius: 15px; /* Bordes redondeados */\n"
-            "    min-height: 10px; /* Tamaño mínimo de la barra de desplazamiento vertical */\n"
-            "    min-width: 10px; /* Tamaño mínimo de la barra de desplazamiento horizontal */\n"
-            "}\n"
-            "\n"
-            "/* Efecto cuando el mouse pasa por encima del manejador */\n"
-            "QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {\n"
-            "    background-color: #1A4567; /* Fondo más oscuro al pasar el mouse */\n"
-            "}\n"
-            "\n"
-            "/* Líneas de los botones de desplazamiento (arriba/abajo o izquierda/derecha) */\n"
-            "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,\n"
-            "QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {\n"
-            "    background: none; /* Quitar los botones de desplazamiento */\n"
-            "}\n"
-            "\n"
-            "/* Flechas de los botones de desplazamiento */\n"
-            "QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,\n"
-            "QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {\n"
-            "    background: none; /* Quitar las flechas */\n"
-            "}\n"
-            ""
-        )
+        self.TablaUsos.setStyleSheet("QTableWidget {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    border: 1px solid #CCCCCC; /* Borde suave */\n"
+"    border-radius: 2px; /* Bordes redondeados */\n"
+"    font-size: 18px; /* Tamaño de fuente */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    gridline-color: #DDDDDD; /* Color de las líneas de la cuadrícula */\n"
+"}\n"
+"\n"
+"QTableWidget::item {\n"
+"    padding: 5px; /* Espaciado de las celdas */\n"
+"    border-radius: 2px; /* Bordes redondeados en las celdas */\n"
+"}\n"
+"\n"
+"QTableWidget::item:hover {\n"
+"    background-color: #f0f0f0; /* Fondo claro al pasar el mouse */\n"
+"    color: #16344D; /* Texto azul al pasar el mouse */\n"
+"}\n"
+"\n"
+"/* Barra de desplazamiento vertical y horizontal */\n"
+"QScrollBar:vertical, QScrollBar:horizontal {\n"
+"    \n"
+"    border-radius: 15px; /* Bordes redondeados */\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    width: 7px; /* Ancho de la barra vertical */\n"
+"    height: 7px; /* Alto de la barra horizontal */\n"
+"}\n"
+"\n"
+"/* Manejador de la barra de desplazamiento (el \"handle\") */\n"
+"QScrollBar::handle:vertical, QScrollBar::handle:horizontal {\n"
+"    background-color: #16344D; /* Barra de desplazamiento en azul */\n"
+"    border-radius: 15px; /* Bordes redondeados */\n"
+"    min-height: 10px; /* Tamaño mínimo de la barra de desplazamiento vertical */\n"
+"    min-width: 10px; /* Tamaño mínimo de la barra de desplazamiento horizontal */\n"
+"}\n"
+"\n"
+"/* Efecto cuando el mouse pasa por encima del manejador */\n"
+"QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {\n"
+"    background-color: #1A4567; /* Fondo más oscuro al pasar el mouse */\n"
+"}\n"
+"\n"
+"/* Líneas de los botones de desplazamiento (arriba/abajo o izquierda/derecha) */\n"
+"QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,\n"
+"QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {\n"
+"    background: none; /* Quitar los botones de desplazamiento */\n"
+"}\n"
+"\n"
+"/* Flechas de los botones de desplazamiento */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,\n"
+"QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {\n"
+"    background: none; /* Quitar las flechas */\n"
+"}\n"
+"")
         self.TablaUsos.setObjectName("TablaUsos")
         self.TablaUsos.setColumnCount(4)
         self.TablaUsos.setRowCount(24)
@@ -327,120 +289,390 @@ class Ui_Usos(object):
         item = QtWidgets.QTableWidgetItem()
         self.TablaUsos.setHorizontalHeaderItem(3, item)
         self.gridLayout_3.addWidget(self.TablaUsos, 2, 0, 1, 1, QtCore.Qt.AlignHCenter)
+        self.frame_3 = QtWidgets.QFrame(self.frame_5)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_3.sizePolicy().hasHeightForWidth())
+        self.frame_3.setSizePolicy(sizePolicy)
+        self.frame_3.setMinimumSize(QtCore.QSize(250, 50))
+        self.frame_3.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_3)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.Linebuscador = QtWidgets.QLineEdit(self.frame_3)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.Linebuscador.sizePolicy().hasHeightForWidth())
+        self.Linebuscador.setSizePolicy(sizePolicy)
+        self.Linebuscador.setMinimumSize(QtCore.QSize(200, 30))
+        self.Linebuscador.setMaximumSize(QtCore.QSize(300, 25))
+        self.Linebuscador.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.Linebuscador.setObjectName("Linebuscador")
+        self.horizontalLayout_2.addWidget(self.Linebuscador)
+        self.toolButton_2 = QtWidgets.QToolButton(self.frame_3)
+        self.toolButton_2.setMinimumSize(QtCore.QSize(45, 45))
+        self.toolButton_2.setMaximumSize(QtCore.QSize(30, 30))
+        self.toolButton_2.setStyleSheet("border:none;")
+        self.toolButton_2.setText("")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("assets/iconos/people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.toolButton_2.setIcon(icon3)
+        self.toolButton_2.setIconSize(QtCore.QSize(32, 32))
+        self.toolButton_2.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
+        self.toolButton_2.setObjectName("toolButton_2")
+        self.horizontalLayout_2.addWidget(self.toolButton_2)
+        self.gridLayout_3.addWidget(self.frame_3, 1, 0, 1, 1, QtCore.Qt.AlignHCenter)
         self.frame_6 = QtWidgets.QFrame(self.frame_5)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.frame_6.sizePolicy().hasHeightForWidth())
         self.frame_6.setSizePolicy(sizePolicy)
         self.frame_6.setMinimumSize(QtCore.QSize(800, 0))
-        self.frame_6.setStyleSheet(
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 20px;\n"
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 10px;\n"
-            "\n"
-            "    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            "\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            ""
-        )
+        self.frame_6.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
         self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_6.setObjectName("frame_6")
         self.gridLayout = QtWidgets.QGridLayout(self.frame_6)
         self.gridLayout.setObjectName("gridLayout")
+        self.checkUsoSilvicultura = QtWidgets.QCheckBox(self.frame_6)
+        self.checkUsoSilvicultura.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.checkUsoSilvicultura.setStyleSheet("QCheckBox::indicator {\n"
+"    width: 18px;\n"
+"    height: 18px;\n"
+"    border: 2px solid #000000; /* Borde negro inicial */\n"
+"    background-color: #f5f5f5; /* Gris claro */\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:hover {\n"
+"    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:checked {\n"
+"    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
+"    border: 2px solid #16344D;\n"
+"}\n"
+"\n"
+"QCheckBox {\n"
+"    color: #000000; /* Texto negro */\n"
+"    font-size: 18px; /* Letra más grande */\n"
+"    padding-left: 8px;\n"
+"}\n"
+"")
+        self.checkUsoSilvicultura.setObjectName("checkUsoSilvicultura")
+        self.gridLayout.addWidget(self.checkUsoSilvicultura, 10, 1, 1, 1, QtCore.Qt.AlignLeft)
+        self.label_9 = QtWidgets.QLabel(self.frame_6)
+        self.label_9.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_9.setObjectName("label_9")
+        self.gridLayout.addWidget(self.label_9, 10, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        spacerItem1 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem1, 1, 2, 1, 1)
+        self.ConcedidoAgricultura = QtWidgets.QLineEdit(self.frame_6)
+        self.ConcedidoAgricultura.setObjectName("ConcedidoAgricultura")
+        self.gridLayout.addWidget(self.ConcedidoAgricultura, 24, 5, 1, 1)
+        self.checkUsoAgricultura = QtWidgets.QCheckBox(self.frame_6)
+        self.checkUsoAgricultura.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.checkUsoAgricultura.setStyleSheet("QCheckBox::indicator {\n"
+"    width: 18px;\n"
+"    height: 18px;\n"
+"    border: 2px solid #000000; /* Borde negro inicial */\n"
+"    background-color: #f5f5f5; /* Gris claro */\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:hover {\n"
+"    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:checked {\n"
+"    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
+"    border: 2px solid #16344D;\n"
+"}\n"
+"\n"
+"QCheckBox {\n"
+"    color: #000000; /* Texto negro */\n"
+"    font-size: 18px; /* Letra más grande */\n"
+"    padding-left: 8px;\n"
+"}\n"
+"")
+        self.checkUsoAgricultura.setObjectName("checkUsoAgricultura")
+        self.gridLayout.addWidget(self.checkUsoAgricultura, 23, 1, 1, 1, QtCore.Qt.AlignLeft)
+        self.label_7 = QtWidgets.QLabel(self.frame_6)
+        self.label_7.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_7.setObjectName("label_7")
+        self.gridLayout.addWidget(self.label_7, 10, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem2, 22, 3, 1, 1)
+        self.checkUsoDomestico = QtWidgets.QCheckBox(self.frame_6)
+        self.checkUsoDomestico.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.checkUsoDomestico.setStyleSheet("QCheckBox::indicator {\n"
+"    width: 18px;\n"
+"    height: 18px;\n"
+"    border: 2px solid #000000; /* Borde negro inicial */\n"
+"    background-color: #f5f5f5; /* Gris claro */\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:hover {\n"
+"    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:checked {\n"
+"    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
+"    border: 2px solid #16344D;\n"
+"}\n"
+"\n"
+"QCheckBox {\n"
+"    color: #000000; /* Texto negro */\n"
+"    font-size: 18px; /* Letra más grande */\n"
+"    padding-left: 8px;\n"
+"}\n"
+"")
+        self.checkUsoDomestico.setObjectName("checkUsoDomestico")
+        self.gridLayout.addWidget(self.checkUsoDomestico, 7, 1, 1, 1, QtCore.Qt.AlignLeft|QtCore.Qt.AlignBottom)
+        self.label = QtWidgets.QLabel(self.frame_6)
+        self.label.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem3, 9, 3, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.frame_6)
+        self.label_5.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_5.setObjectName("label_5")
+        self.gridLayout.addWidget(self.label_5, 7, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.ObservacionSilvicultura = QtWidgets.QLineEdit(self.frame_6)
+        self.ObservacionSilvicultura.setObjectName("ObservacionSilvicultura")
+        self.gridLayout.addWidget(self.ObservacionSilvicultura, 18, 3, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem4, 0, 6, 1, 1)
+        self.ObservacionDomestico = QtWidgets.QLineEdit(self.frame_6)
+        self.ObservacionDomestico.setObjectName("ObservacionDomestico")
+        self.gridLayout.addWidget(self.ObservacionDomestico, 8, 3, 1, 1)
+        self.label_11 = QtWidgets.QLabel(self.frame_6)
+        self.label_11.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_11.setObjectName("label_11")
+        self.gridLayout.addWidget(self.label_11, 20, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_3 = QtWidgets.QLabel(self.frame_6)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
+        self.label_3.setSizePolicy(sizePolicy)
+        self.label_3.setMinimumSize(QtCore.QSize(0, 40))
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 30, 1, 1, 1)
+        self.label_14 = QtWidgets.QLabel(self.frame_6)
+        self.label_14.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_14.setObjectName("label_14")
+        self.gridLayout.addWidget(self.label_14, 26, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LineNumeroExpediente = QtWidgets.QLineEdit(self.frame_6)
+        self.LineNumeroExpediente.setMinimumSize(QtCore.QSize(0, 0))
+        self.LineNumeroExpediente.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineNumeroExpediente.setObjectName("LineNumeroExpediente")
+        self.gridLayout.addWidget(self.LineNumeroExpediente, 1, 1, 1, 1)
+        self.label_6 = QtWidgets.QLabel(self.frame_6)
+        self.label_6.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_6.setObjectName("label_6")
+        self.gridLayout.addWidget(self.label_6, 7, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_2 = QtWidgets.QLabel(self.frame_6)
+        self.label_2.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 0, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.listUsos = QtWidgets.QListWidget(self.frame_6)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.listUsos.sizePolicy().hasHeightForWidth())
         self.listUsos.setSizePolicy(sizePolicy)
         self.listUsos.setMinimumSize(QtCore.QSize(0, 85))
-        self.listUsos.viewport().setProperty(
-            "cursor", QtGui.QCursor(QtCore.Qt.PointingHandCursor)
-        )
+        self.listUsos.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.listUsos.setMouseTracking(False)
-        self.listUsos.setStyleSheet(
-            "QListWidget {\n"
-            "    background-color: #f5f5f5; /* Fondo gris claro */\n"
-            "}\n"
-            "\n"
-            "QListWidget::item {\n"
-            "    padding: 5px; /* Espaciado de las celdas */\n"
-            "}\n"
-            "\n"
-            "\n"
-            "QScrollBar:vertical, QScrollBar:horizontal {\n"
-            "    border-radius: 15px; /* Bordes redondeados */\n"
-            "    background-color: #f5f5f5; /* Fondo gris claro */\n"
-            "    width: 7px; /* Ancho de la barra vertical */\n"
-            "    height: 7px; /* Alto de la barra horizontal */\n"
-            "}\n"
-            "\n"
-            "QScrollBar::handle:vertical, QScrollBar::handle:horizontal {\n"
-            "    background-color: #16344D; /* Barra de desplazamiento en azul */\n"
-            "    border-radius: 15px; /* Bordes redondeados */\n"
-            "    min-height: 10px; /* Tamaño mínimo de la barra de desplazamiento vertical */\n"
-            "    min-width: 10px; /* Tamaño mínimo de la barra de desplazamiento horizontal */\n"
-            "}\n"
-            "\n"
-            "QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {\n"
-            "    background-color: #1A4567; /* Fondo más oscuro al pasar el mouse */\n"
-            "}\n"
-            "\n"
-            "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,\n"
-            "QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {\n"
-            "    background: none; /* Quitar los botones de desplazamiento */\n"
-            "}\n"
-            "\n"
-            "QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,\n"
-            "QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {\n"
-            "    background: none; /* Quitar las flechas */\n"
-            "}\n"
-            ""
-        )
+        self.listUsos.setStyleSheet("QListWidget {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"}\n"
+"\n"
+"QListWidget::item {\n"
+"    padding: 5px; /* Espaciado de las celdas */\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar:vertical, QScrollBar:horizontal {\n"
+"    border-radius: 15px; /* Bordes redondeados */\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    width: 7px; /* Ancho de la barra vertical */\n"
+"    height: 7px; /* Alto de la barra horizontal */\n"
+"}\n"
+"\n"
+"QScrollBar::handle:vertical, QScrollBar::handle:horizontal {\n"
+"    background-color: #16344D; /* Barra de desplazamiento en azul */\n"
+"    border-radius: 15px; /* Bordes redondeados */\n"
+"    min-height: 10px; /* Tamaño mínimo de la barra de desplazamiento vertical */\n"
+"    min-width: 10px; /* Tamaño mínimo de la barra de desplazamiento horizontal */\n"
+"}\n"
+"\n"
+"QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {\n"
+"    background-color: #1A4567; /* Fondo más oscuro al pasar el mouse */\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,\n"
+"QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {\n"
+"    background: none; /* Quitar los botones de desplazamiento */\n"
+"}\n"
+"\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,\n"
+"QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {\n"
+"    background: none; /* Quitar las flechas */\n"
+"}\n"
+"")
         self.listUsos.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
         self.listUsos.setViewMode(QtWidgets.QListView.ListMode)
         self.listUsos.setObjectName("listUsos")
@@ -471,484 +703,167 @@ class Ui_Usos(object):
         item = QtWidgets.QListWidgetItem()
         self.listUsos.addItem(item)
         self.gridLayout.addWidget(self.listUsos, 26, 1, 1, 1)
-        self.checkUsoAbrevederos = QtWidgets.QCheckBox(self.frame_6)
-        self.checkUsoAbrevederos.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.checkUsoAbrevederos.setStyleSheet(
-            "QCheckBox::indicator {\n"
-            "    width: 18px;\n"
-            "    height: 18px;\n"
-            "    border: 2px solid #000000; /* Borde negro inicial */\n"
-            "    background-color: #f5f5f5; /* Gris claro */\n"
-            "    border-radius: 4px;\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:hover {\n"
-            "    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:checked {\n"
-            "    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
-            "    border: 2px solid #16344D;\n"
-            "}\n"
-            "\n"
-            "QCheckBox {\n"
-            "    color: #000000; /* Texto negro */\n"
-            "    font-size: 18px; /* Letra más grande */\n"
-            "    padding-left: 8px;\n"
-            "}\n"
-            ""
-        )
-        self.checkUsoAbrevederos.setObjectName("checkUsoAbrevederos")
-        self.gridLayout.addWidget(
-            self.checkUsoAbrevederos, 20, 1, 1, 1, QtCore.Qt.AlignLeft
-        )
-        self.label_8 = QtWidgets.QLabel(self.frame_6)
-        self.label_8.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_8.setObjectName("label_8")
-        self.gridLayout.addWidget(self.label_8, 20, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_14 = QtWidgets.QLabel(self.frame_6)
-        self.label_14.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_14.setObjectName("label_14")
-        self.gridLayout.addWidget(self.label_14, 26, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.ObservacionSilvicultura = QtWidgets.QLineEdit(self.frame_6)
-        self.ObservacionSilvicultura.setObjectName("ObservacionSilvicultura")
-        self.gridLayout.addWidget(self.ObservacionSilvicultura, 18, 3, 1, 1)
-        self.LineNumeroDoc = QtWidgets.QLineEdit(self.frame_6)
-        self.LineNumeroDoc.setMinimumSize(QtCore.QSize(0, 0))
-        self.LineNumeroDoc.setStyleSheet(
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 20px;\n"
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 10px;\n"
-            "\n"
-            "    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            "\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            ""
-        )
-        self.LineNumeroDoc.setObjectName("LineNumeroDoc")
-        self.gridLayout.addWidget(self.LineNumeroDoc, 1, 5, 1, 1)
-        self.ObservacionAgricultura = QtWidgets.QLineEdit(self.frame_6)
-        self.ObservacionAgricultura.setObjectName("ObservacionAgricultura")
-        self.gridLayout.addWidget(self.ObservacionAgricultura, 24, 3, 1, 1)
-        self.CaudalTotal = QtWidgets.QLineEdit(self.frame_6)
-        self.CaudalTotal.setObjectName("CaudalTotal")
-        self.gridLayout.addWidget(self.CaudalTotal, 31, 5, 1, 1)
-        self.LineRazonSocial = QtWidgets.QLineEdit(self.frame_6)
-        self.LineRazonSocial.setObjectName("LineRazonSocial")
-        self.gridLayout.addWidget(self.LineRazonSocial, 1, 3, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(
-            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
-        )
-        self.gridLayout.addItem(spacerItem1, 1, 0, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
-        self.gridLayout.addItem(spacerItem2, 1, 4, 1, 1)
-        self.LineNumeroExpediente = QtWidgets.QLineEdit(self.frame_6)
-        self.LineNumeroExpediente.setMinimumSize(QtCore.QSize(0, 0))
-        self.LineNumeroExpediente.setStyleSheet(
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 20px;\n"
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 10px;\n"
-            "\n"
-            "    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            "\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            ""
-        )
-        self.LineNumeroExpediente.setObjectName("LineNumeroExpediente")
-        self.gridLayout.addWidget(self.LineNumeroExpediente, 1, 1, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
-        )
-        self.gridLayout.addItem(spacerItem3, 9, 3, 1, 1)
-        self.label_12 = QtWidgets.QLabel(self.frame_6)
-        self.label_12.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_12.setObjectName("label_12")
-        self.gridLayout.addWidget(self.label_12, 26, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_3 = QtWidgets.QLabel(self.frame_6)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
-        )
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
-        self.label_3.setSizePolicy(sizePolicy)
-        self.label_3.setMinimumSize(QtCore.QSize(0, 40))
-        self.label_3.setText("")
-        self.label_3.setObjectName("label_3")
-        self.gridLayout.addWidget(self.label_3, 30, 1, 1, 1)
-        self.ObservacionAbrevederos = QtWidgets.QLineEdit(self.frame_6)
-        self.ObservacionAbrevederos.setObjectName("ObservacionAbrevederos")
-        self.gridLayout.addWidget(self.ObservacionAbrevederos, 21, 3, 1, 1)
-        spacerItem4 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
-        )
-        self.gridLayout.addItem(spacerItem4, 22, 3, 1, 1)
-        spacerItem5 = QtWidgets.QSpacerItem(
-            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum
-        )
-        self.gridLayout.addItem(spacerItem5, 0, 6, 1, 1)
-        self.checkUsoAgricultura = QtWidgets.QCheckBox(self.frame_6)
-        self.checkUsoAgricultura.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.checkUsoAgricultura.setStyleSheet(
-            "QCheckBox::indicator {\n"
-            "    width: 18px;\n"
-            "    height: 18px;\n"
-            "    border: 2px solid #000000; /* Borde negro inicial */\n"
-            "    background-color: #f5f5f5; /* Gris claro */\n"
-            "    border-radius: 4px;\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:hover {\n"
-            "    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:checked {\n"
-            "    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
-            "    border: 2px solid #16344D;\n"
-            "}\n"
-            "\n"
-            "QCheckBox {\n"
-            "    color: #000000; /* Texto negro */\n"
-            "    font-size: 18px; /* Letra más grande */\n"
-            "    padding-left: 8px;\n"
-            "}\n"
-            ""
-        )
-        self.checkUsoAgricultura.setObjectName("checkUsoAgricultura")
-        self.gridLayout.addWidget(
-            self.checkUsoAgricultura, 23, 1, 1, 1, QtCore.Qt.AlignLeft
-        )
-        self.ObservacionDomestico = QtWidgets.QLineEdit(self.frame_6)
-        self.ObservacionDomestico.setObjectName("ObservacionDomestico")
-        self.gridLayout.addWidget(self.ObservacionDomestico, 8, 3, 1, 1)
-        self.label_6 = QtWidgets.QLabel(self.frame_6)
-        self.label_6.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_6.setObjectName("label_6")
-        self.gridLayout.addWidget(self.label_6, 7, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_9 = QtWidgets.QLabel(self.frame_6)
-        self.label_9.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_9.setObjectName("label_9")
-        self.gridLayout.addWidget(self.label_9, 10, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.ConcedidoListaUsos = QtWidgets.QLineEdit(self.frame_6)
-        self.ConcedidoListaUsos.setObjectName("ConcedidoListaUsos")
-        self.gridLayout.addWidget(self.ConcedidoListaUsos, 27, 5, 1, 1)
-        self.label_5 = QtWidgets.QLabel(self.frame_6)
-        self.label_5.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_5.setObjectName("label_5")
-        self.gridLayout.addWidget(self.label_5, 7, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_2 = QtWidgets.QLabel(self.frame_6)
-        self.label_2.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_2.setObjectName("label_2")
-        self.gridLayout.addWidget(self.label_2, 0, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        spacerItem6 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
-        )
-        self.gridLayout.addItem(spacerItem6, 19, 3, 1, 1)
-        self.label_11 = QtWidgets.QLabel(self.frame_6)
-        self.label_11.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_11.setObjectName("label_11")
-        self.gridLayout.addWidget(self.label_11, 20, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.checkUsoSilvicultura = QtWidgets.QCheckBox(self.frame_6)
-        self.checkUsoSilvicultura.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.checkUsoSilvicultura.setStyleSheet(
-            "QCheckBox::indicator {\n"
-            "    width: 18px;\n"
-            "    height: 18px;\n"
-            "    border: 2px solid #000000; /* Borde negro inicial */\n"
-            "    background-color: #f5f5f5; /* Gris claro */\n"
-            "    border-radius: 4px;\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:hover {\n"
-            "    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:checked {\n"
-            "    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
-            "    border: 2px solid #16344D;\n"
-            "}\n"
-            "\n"
-            "QCheckBox {\n"
-            "    color: #000000; /* Texto negro */\n"
-            "    font-size: 18px; /* Letra más grande */\n"
-            "    padding-left: 8px;\n"
-            "}\n"
-            ""
-        )
-        self.checkUsoSilvicultura.setObjectName("checkUsoSilvicultura")
-        self.gridLayout.addWidget(
-            self.checkUsoSilvicultura, 10, 1, 1, 1, QtCore.Qt.AlignLeft
-        )
-        self.ObservacionListaUsos = QtWidgets.QLineEdit(self.frame_6)
-        self.ObservacionListaUsos.setObjectName("ObservacionListaUsos")
-        self.gridLayout.addWidget(self.ObservacionListaUsos, 27, 3, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem5, 1, 4, 1, 1)
+        self.label_15 = QtWidgets.QLabel(self.frame_6)
+        self.label_15.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_15.setObjectName("label_15")
+        self.gridLayout.addWidget(self.label_15, 30, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        spacerItem6 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem6, 2, 3, 1, 1)
         self.ConcedidoAbrevederos = QtWidgets.QLineEdit(self.frame_6)
         self.ConcedidoAbrevederos.setObjectName("ConcedidoAbrevederos")
         self.gridLayout.addWidget(self.ConcedidoAbrevederos, 21, 5, 1, 1)
-        spacerItem7 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
-        self.gridLayout.addItem(spacerItem7, 1, 2, 1, 1)
-        spacerItem8 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
-        )
-        self.gridLayout.addItem(spacerItem8, 25, 3, 1, 1)
-        self.checkUsoDomestico = QtWidgets.QCheckBox(self.frame_6)
-        self.checkUsoDomestico.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.checkUsoDomestico.setStyleSheet(
-            "QCheckBox::indicator {\n"
-            "    width: 18px;\n"
-            "    height: 18px;\n"
-            "    border: 2px solid #000000; /* Borde negro inicial */\n"
-            "    background-color: #f5f5f5; /* Gris claro */\n"
-            "    border-radius: 4px;\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:hover {\n"
-            "    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
-            "}\n"
-            "\n"
-            "QCheckBox::indicator:checked {\n"
-            "    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
-            "    border: 2px solid #16344D;\n"
-            "}\n"
-            "\n"
-            "QCheckBox {\n"
-            "    color: #000000; /* Texto negro */\n"
-            "    font-size: 18px; /* Letra más grande */\n"
-            "    padding-left: 8px;\n"
-            "}\n"
-            ""
-        )
-        self.checkUsoDomestico.setObjectName("checkUsoDomestico")
-        self.gridLayout.addWidget(
-            self.checkUsoDomestico,
-            7,
-            1,
-            1,
-            1,
-            QtCore.Qt.AlignLeft | QtCore.Qt.AlignBottom,
-        )
-        self.label_15 = QtWidgets.QLabel(self.frame_6)
-        self.label_15.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_15.setObjectName("label_15")
-        self.gridLayout.addWidget(self.label_15, 30, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label = QtWidgets.QLabel(self.frame_6)
-        self.label.setStyleSheet("border:none;\n" "font:20px;")
-        self.label.setObjectName("label")
-        self.gridLayout.addWidget(self.label, 0, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_4 = QtWidgets.QLabel(self.frame_6)
-        self.label_4.setStyleSheet("border:none;\n" "font:20px;")
+        self.label_4.setStyleSheet("border:none;\n"
+"font:20px;")
         self.label_4.setObjectName("label_4")
         self.gridLayout.addWidget(self.label_4, 0, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.checkUsoAbrevederos = QtWidgets.QCheckBox(self.frame_6)
+        self.checkUsoAbrevederos.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.checkUsoAbrevederos.setStyleSheet("QCheckBox::indicator {\n"
+"    width: 18px;\n"
+"    height: 18px;\n"
+"    border: 2px solid #000000; /* Borde negro inicial */\n"
+"    background-color: #f5f5f5; /* Gris claro */\n"
+"    border-radius: 4px;\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:hover {\n"
+"    border: 2px solid #3A6EA5; /* Azul más claro cuando pasas el mouse */\n"
+"}\n"
+"\n"
+"QCheckBox::indicator:checked {\n"
+"    background-color: #16344D; /* Azul oscuro cuando está activo */\n"
+"    border: 2px solid #16344D;\n"
+"}\n"
+"\n"
+"QCheckBox {\n"
+"    color: #000000; /* Texto negro */\n"
+"    font-size: 18px; /* Letra más grande */\n"
+"    padding-left: 8px;\n"
+"}\n"
+"")
+        self.checkUsoAbrevederos.setObjectName("checkUsoAbrevederos")
+        self.gridLayout.addWidget(self.checkUsoAbrevederos, 20, 1, 1, 1, QtCore.Qt.AlignLeft)
+        self.label_12 = QtWidgets.QLabel(self.frame_6)
+        self.label_12.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_12.setObjectName("label_12")
+        self.gridLayout.addWidget(self.label_12, 26, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        spacerItem7 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem7, 19, 3, 1, 1)
+        self.ObservacionAgricultura = QtWidgets.QLineEdit(self.frame_6)
+        self.ObservacionAgricultura.setObjectName("ObservacionAgricultura")
+        self.gridLayout.addWidget(self.ObservacionAgricultura, 24, 3, 1, 1)
+        spacerItem8 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem8, 1, 0, 1, 1)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem9, 25, 3, 1, 1)
+        self.CaudalTotal = QtWidgets.QLineEdit(self.frame_6)
+        self.CaudalTotal.setObjectName("CaudalTotal")
+        self.gridLayout.addWidget(self.CaudalTotal, 31, 5, 1, 1)
         self.label_10 = QtWidgets.QLabel(self.frame_6)
-        self.label_10.setStyleSheet("border:none;\n" "font:20px;")
+        self.label_10.setStyleSheet("border:none;\n"
+"font:20px;")
         self.label_10.setObjectName("label_10")
         self.gridLayout.addWidget(self.label_10, 23, 5, 1, 1, QtCore.Qt.AlignHCenter)
-        spacerItem9 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
-        )
-        self.gridLayout.addItem(spacerItem9, 2, 3, 1, 1)
-        self.label_7 = QtWidgets.QLabel(self.frame_6)
-        self.label_7.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_7.setObjectName("label_7")
-        self.gridLayout.addWidget(self.label_7, 10, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.ConcedidoAgricultura = QtWidgets.QLineEdit(self.frame_6)
-        self.ConcedidoAgricultura.setObjectName("ConcedidoAgricultura")
-        self.gridLayout.addWidget(self.ConcedidoAgricultura, 24, 5, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.frame_6)
+        self.label_8.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_8.setObjectName("label_8")
+        self.gridLayout.addWidget(self.label_8, 20, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.ConcedidoSilvicultura = QtWidgets.QLineEdit(self.frame_6)
         self.ConcedidoSilvicultura.setObjectName("ConcedidoSilvicultura")
         self.gridLayout.addWidget(self.ConcedidoSilvicultura, 18, 5, 1, 1)
+        self.ConcedidoListaUsos = QtWidgets.QLineEdit(self.frame_6)
+        self.ConcedidoListaUsos.setObjectName("ConcedidoListaUsos")
+        self.gridLayout.addWidget(self.ConcedidoListaUsos, 27, 5, 1, 1)
+        self.label_13 = QtWidgets.QLabel(self.frame_6)
+        self.label_13.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_13.setObjectName("label_13")
+        self.gridLayout.addWidget(self.label_13, 23, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.ObservacionAbrevederos = QtWidgets.QLineEdit(self.frame_6)
+        self.ObservacionAbrevederos.setObjectName("ObservacionAbrevederos")
+        self.gridLayout.addWidget(self.ObservacionAbrevederos, 21, 3, 1, 1)
+        self.LineNumeroDoc = QtWidgets.QLineEdit(self.frame_6)
+        self.LineNumeroDoc.setMinimumSize(QtCore.QSize(0, 0))
+        self.LineNumeroDoc.setStyleSheet("QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 20px;\n"
+"QLineEdit {\n"
+"\n"
+"    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font: 10px;\n"
+"\n"
+"    margin-right: 8px; /* Margen a la derecha de 10px */\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"\n"
+"}\n"
+"\n"
+"/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
+"}\n"
+"\n"
+"/* Al hacer clic (foco), se mantiene igual que el hover */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
+"}\n"
+"")
+        self.LineNumeroDoc.setObjectName("LineNumeroDoc")
+        self.gridLayout.addWidget(self.LineNumeroDoc, 1, 5, 1, 1)
+        spacerItem10 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem10, 28, 5, 1, 1)
+        self.LineRazonSocial = QtWidgets.QLineEdit(self.frame_6)
+        self.LineRazonSocial.setObjectName("LineRazonSocial")
+        self.gridLayout.addWidget(self.LineRazonSocial, 1, 3, 1, 1)
+        self.ObservacionListaUsos = QtWidgets.QLineEdit(self.frame_6)
+        self.ObservacionListaUsos.setObjectName("ObservacionListaUsos")
+        self.gridLayout.addWidget(self.ObservacionListaUsos, 27, 3, 1, 1)
         self.ConcedidoDomestico = QtWidgets.QLineEdit(self.frame_6)
         self.ConcedidoDomestico.setObjectName("ConcedidoDomestico")
         self.gridLayout.addWidget(self.ConcedidoDomestico, 8, 5, 1, 1)
-        self.label_13 = QtWidgets.QLabel(self.frame_6)
-        self.label_13.setStyleSheet("border:none;\n" "font:20px;")
-        self.label_13.setObjectName("label_13")
-        self.gridLayout.addWidget(self.label_13, 23, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        spacerItem10 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
-        )
-        self.gridLayout.addItem(spacerItem10, 28, 5, 1, 1)
+        self.label_16 = QtWidgets.QLabel(self.frame_6)
+        self.label_16.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_16.setObjectName("label_16")
+        self.gridLayout.addWidget(self.label_16, 30, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.LinePorcentaje = QtWidgets.QLineEdit(self.frame_6)
+        self.LinePorcentaje.setObjectName("LinePorcentaje")
+        self.gridLayout.addWidget(self.LinePorcentaje, 31, 3, 1, 1)
         self.gridLayout_3.addWidget(self.frame_6, 0, 0, 1, 1)
-        self.frame_3 = QtWidgets.QFrame(self.frame_5)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
-        )
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.frame_3.sizePolicy().hasHeightForWidth())
-        self.frame_3.setSizePolicy(sizePolicy)
-        self.frame_3.setMinimumSize(QtCore.QSize(250, 50))
-        self.frame_3.setStyleSheet("background-color: rgb(255, 255, 255);")
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_3)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.Linebuscador = QtWidgets.QLineEdit(self.frame_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.Linebuscador.sizePolicy().hasHeightForWidth())
-        self.Linebuscador.setSizePolicy(sizePolicy)
-        self.Linebuscador.setMinimumSize(QtCore.QSize(200, 30))
-        self.Linebuscador.setMaximumSize(QtCore.QSize(300, 25))
-        self.Linebuscador.setStyleSheet(
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 20px;\n"
-            "QLineEdit {\n"
-            "\n"
-            "    background-color: #f5f5f5; /* Gris más claro cuando se escribe */\n"
-            "    border: none; /* Sin bordes generales */\n"
-            "    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */\n"
-            "    border-radius: 0px; /* Sin bordes redondeados */\n"
-            "    padding: 5px; /* Espaciado interno */\n"
-            "    font: 10px;\n"
-            "\n"
-            "    margin-right: 8px; /* Margen a la derecha de 10px */\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            "\n"
-            "}\n"
-            "\n"
-            "/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */\n"
-            "QLineEdit:hover {\n"
-            "    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */\n"
-            "}\n"
-            "\n"
-            "/* Al hacer clic (foco), se mantiene igual que el hover */\n"
-            "QLineEdit:focus {\n"
-            "    border-bottom: 2px solid #16344D;\n"
-            "    background-color: #e0e0e0; /* Gris más claro cuando se escribe */\n"
-            "    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */\n"
-            "}\n"
-            ""
-        )
-        self.Linebuscador.setObjectName("Linebuscador")
-        self.horizontalLayout_2.addWidget(self.Linebuscador)
-        self.toolButton_2 = QtWidgets.QToolButton(self.frame_3)
-        self.toolButton_2.setMinimumSize(QtCore.QSize(45, 45))
-        self.toolButton_2.setMaximumSize(QtCore.QSize(30, 30))
-        self.toolButton_2.setStyleSheet("border:none;")
-        self.toolButton_2.setText("")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(
-            QtGui.QPixmap("assets/iconos/people.png"),
-            QtGui.QIcon.Normal,
-            QtGui.QIcon.Off,
-        )
-        self.toolButton_2.setIcon(icon3)
-        self.toolButton_2.setIconSize(QtCore.QSize(32, 32))
-        self.toolButton_2.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
-        self.toolButton_2.setObjectName("toolButton_2")
-        self.horizontalLayout_2.addWidget(self.toolButton_2)
-        self.gridLayout_3.addWidget(self.frame_3, 1, 0, 1, 1, QtCore.Qt.AlignHCenter)
         self.verticalLayout_3.addWidget(self.frame_5)
         self.stackedWidget_2.addWidget(self.stackedWidget_2Page1)
         self.horizontalLayout.addWidget(self.stackedWidget_2)
         self.verticalLayout_2.addWidget(self.frame)
         self.widget = QtWidgets.QWidget(Form)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
@@ -1023,6 +938,17 @@ class Ui_Usos(object):
         item.setText(_translate("Form", "Caudal Concedido"))
         item = self.TablaUsos.horizontalHeaderItem(3)
         item.setText(_translate("Form", "Caudal Total"))
+        self.checkUsoSilvicultura.setText(_translate("Form", "Riego y Silvicultura"))
+        self.label_9.setText(_translate("Form", "Caudal Concedido:"))
+        self.checkUsoAgricultura.setText(_translate("Form", "Agricultura y pesca"))
+        self.label_7.setText(_translate("Form", "Tipo de cultivo: "))
+        self.checkUsoDomestico.setText(_translate("Form", "Abastecimiento Doméstico"))
+        self.label.setText(_translate("Form", "Número de expediente:"))
+        self.label_5.setText(_translate("Form", "Permanentes: "))
+        self.label_11.setText(_translate("Form", "Caudal Concedido:"))
+        self.label_14.setText(_translate("Form", "Caudal Concedido:"))
+        self.label_6.setText(_translate("Form", "Caudal Concedido:"))
+        self.label_2.setText(_translate("Form", "Razon Social:"))
         __sortingEnabled = self.listUsos.isSortingEnabled()
         self.listUsos.setSortingEnabled(False)
         item = self.listUsos.item(0)
@@ -1052,23 +978,11 @@ class Ui_Usos(object):
         item = self.listUsos.item(12)
         item.setText(_translate("Form", "Nuevo elemento"))
         self.listUsos.setSortingEnabled(__sortingEnabled)
-        self.checkUsoAbrevederos.setText(
-            _translate("Form", "Abastecimiento Abrevaderos")
-        )
-        self.label_8.setText(_translate("Form", "Especie:"))
-        self.label_14.setText(_translate("Form", "Caudal Concedido:"))
-        self.label_12.setText(_translate("Form", "Observaciones:"))
-        self.checkUsoAgricultura.setText(_translate("Form", "Agricultura y pesca"))
-        self.label_6.setText(_translate("Form", "Caudal Concedido:"))
-        self.label_9.setText(_translate("Form", "Caudal Concedido:"))
-        self.label_5.setText(_translate("Form", "Permanentes: "))
-        self.label_2.setText(_translate("Form", "Razon Social:"))
-        self.label_11.setText(_translate("Form", "Caudal Concedido:"))
-        self.checkUsoSilvicultura.setText(_translate("Form", "Riego y Silvicultura"))
-        self.checkUsoDomestico.setText(_translate("Form", "Abastecimiento Doméstico"))
         self.label_15.setText(_translate("Form", "Caudal Total:"))
-        self.label.setText(_translate("Form", "Número de expediente:"))
         self.label_4.setText(_translate("Form", "Número de documento:"))
+        self.checkUsoAbrevederos.setText(_translate("Form", "Abastecimiento Abrevaderos"))
+        self.label_12.setText(_translate("Form", "Observaciones:"))
         self.label_10.setText(_translate("Form", "Caudal Concedido:"))
-        self.label_7.setText(_translate("Form", "Tipo de cultivo: "))
+        self.label_8.setText(_translate("Form", "Especie:"))
         self.label_13.setText(_translate("Form", "Tipo de animales:"))
+        self.label_16.setText(_translate("Form", "Porcentaje Otorgado:"))
