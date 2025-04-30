@@ -334,7 +334,7 @@ class Ui_Registro(object):
         self.toolButton_2.setStyleSheet("border:none;")
         self.toolButton_2.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../assets/iconos/people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("assets/iconos/people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolButton_2.setIcon(icon)
         self.toolButton_2.setIconSize(QtCore.QSize(32, 32))
         self.toolButton_2.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
@@ -519,7 +519,7 @@ class Ui_Registro(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../../assets/iconos/sobresalir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("assets/iconos/sobresalir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.BtnExcel.setIcon(icon1)
         self.BtnExcel.setIconSize(QtCore.QSize(24, 24))
         self.BtnExcel.setObjectName("BtnExcel")
