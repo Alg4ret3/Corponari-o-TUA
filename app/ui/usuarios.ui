@@ -762,7 +762,7 @@ QCheckBox {
 font:20px;</string>
                   </property>
                   <property name="text">
-                   <string>Regional:</string>
+                   <string>Zona:</string>
                   </property>
                  </widget>
                 </item>

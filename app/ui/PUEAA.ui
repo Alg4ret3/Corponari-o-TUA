@@ -548,6 +548,46 @@ QLineEdit:focus {
                </property>
               </widget>
              </item>
+             <item row="14" column="1" alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_10">
+               <property name="styleSheet">
+                <string notr="true">border:none;
+font:20px;</string>
+               </property>
+               <property name="text">
+                <string>Número de Expediente PUEAA:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="15" column="1">
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior */
+    border-radius: 0px; /* Sin bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    margin-right: 8px; /* Margen derecho */
+    text-align: center; /* Iniciar centrado */
+}
+
+/* Cambia el estilo cuando el cursor pasa por encima */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */
+}
+
+/* Cambia el estilo cuando está enfocado */
+QLineEdit:focus {
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Fondo más claro */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+}
+</string>
+               </property>
+              </widget>
+             </item>
             </layout>
            </widget>
           </item>

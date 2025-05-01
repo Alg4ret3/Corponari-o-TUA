@@ -412,6 +412,37 @@ class Ui_PUEAA(object):
 "")
         self.lineFechaPresentacion.setObjectName("lineFechaPresentacion")
         self.gridLayout.addWidget(self.lineFechaPresentacion, 15, 0, 1, 1)
+        self.label_10 = QtWidgets.QLabel(self.frame_6)
+        self.label_10.setStyleSheet("border:none;\n"
+"font:20px;")
+        self.label_10.setObjectName("label_10")
+        self.gridLayout.addWidget(self.label_10, 14, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.lineEdit = QtWidgets.QLineEdit(self.frame_6)
+        self.lineEdit.setStyleSheet("QLineEdit {\n"
+"    background-color: #f5f5f5; /* Fondo gris claro */\n"
+"    border: none; /* Sin bordes generales */\n"
+"    border-bottom: 1px solid #000000; /* Solo borde inferior */\n"
+"    border-radius: 0px; /* Sin bordes redondeados */\n"
+"    padding: 5px; /* Espaciado interno */\n"
+"    font-size: 20px; /* Tamaño de fuente */\n"
+"    margin-right: 8px; /* Margen derecho */\n"
+"    text-align: center; /* Iniciar centrado */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando el cursor pasa por encima */\n"
+"QLineEdit:hover {\n"
+"    border-bottom: 2px solid #16344D; /* Resalta el borde inferior */\n"
+"}\n"
+"\n"
+"/* Cambia el estilo cuando está enfocado */\n"
+"QLineEdit:focus {\n"
+"    border-bottom: 2px solid #16344D;\n"
+"    background-color: #e0e0e0; /* Fondo más claro */\n"
+"    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra */\n"
+"}\n"
+"")
+        self.lineEdit.setObjectName("lineEdit")
+        self.gridLayout.addWidget(self.lineEdit, 15, 1, 1, 1)
         self.verticalLayout.addWidget(self.frame_6, 0, QtCore.Qt.AlignHCenter)
         self.frame_5 = QtWidgets.QFrame(self.stackedWidget_2Page1)
         self.frame_5.setMinimumSize(QtCore.QSize(500, 0))
@@ -769,6 +800,7 @@ class Ui_PUEAA(object):
         self.label.setText(_translate("Form", "Número de Expediente:"))
         self.label_7.setText(_translate("Form", "Razon Social:"))
         self.label_6.setText(_translate("Form", "Fecha de memorando:"))
+        self.label_10.setText(_translate("Form", "Número de Expediente PUEAA:"))
         self.BtnCrear.setText(_translate("Form", " Crear"))
         self.BtnActualizar.setText(_translate("Form", " Actualizar"))
         self.BtnBorrar.setText(_translate("Form", " Borrar"))
