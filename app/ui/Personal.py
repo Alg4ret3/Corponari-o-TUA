@@ -128,7 +128,7 @@ class Ui_Personal(object):
         self.toolButton_2.setStyleSheet("border:none;")
         self.toolButton_2.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../assets/iconos/people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("assets/iconos/people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolButton_2.setIcon(icon)
         self.toolButton_2.setIconSize(QtCore.QSize(32, 32))
         self.toolButton_2.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
@@ -179,7 +179,7 @@ class Ui_Personal(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../../assets/iconos/anadir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("assets/iconos/anadir.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.BtnCrear.setIcon(icon1)
         self.BtnCrear.setIconSize(QtCore.QSize(24, 24))
         self.BtnCrear.setObjectName("BtnCrear")
@@ -214,7 +214,7 @@ class Ui_Personal(object):
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../../assets/iconos/actualizar-flecha.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("assets/iconos/actualizar-flecha.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.BtnActualizar.setIcon(icon2)
         self.BtnActualizar.setIconSize(QtCore.QSize(24, 24))
         self.BtnActualizar.setObjectName("BtnActualizar")
@@ -249,7 +249,7 @@ class Ui_Personal(object):
 "}\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("../../assets/iconos/borrar.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("assets/iconos/borrar.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.BtnBorrar.setIcon(icon3)
         self.BtnBorrar.setIconSize(QtCore.QSize(28, 28))
         self.BtnBorrar.setObjectName("BtnBorrar")
